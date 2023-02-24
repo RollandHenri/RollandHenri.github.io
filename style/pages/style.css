@@ -121,85 +121,6 @@ header .title .chevron {
   height: 60px;
 }
 
-.second-Skills-Certif {
-  width: 100%;
-  background: rgba(228, 226, 226, 0.623);
-}
-
-.skills-softSkills {
-  width: 80%;
-  height: 800px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  border: 2px solid rgba(131, 131, 131, 0.418);
-}
-.skills-softSkills .skills {
-  height: 100%;
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: start;
-}
-.skills-softSkills .skills .skills-title {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  border: 1px solid black;
-}
-.skills-softSkills .skills .skills-graph {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-  margin: 0 10px;
-}
-.skills-softSkills .skills .skills-graph h5 {
-  text-align: center;
-  margin: 5px 0;
-}
-.skills-softSkills .skills .skills-graph img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 50px;
-  height: 50px;
-}
-.skills-softSkills .softSkills {
-  height: 100%;
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: start;
-}
-.skills-softSkills .softSkills .softSkills-title {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  border: 1px solid black;
-}
-.skills-softSkills .softSkills .softSkills-pic {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-  margin: 0 10px;
-}
-
 .first-about {
   width: 100%;
   height: 800px;
@@ -247,4 +168,45 @@ header .title .chevron {
   font-size: 1.1rem;
   font-weight: 600;
   text-align: justify;
+}
+
+.second-skills-softSkills {
+  background: green;
+}
+.second-skills-softSkills .skills-softSkills {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 800px;
+  margin: 0 auto;
+}
+.second-skills-softSkills .skills-softSkills .skills {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.second-skills-softSkills .skills-softSkills .skills .skills-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 100%;
+}
+.second-skills-softSkills .skills-softSkills .skills .skills-graph {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+}
+.second-skills-softSkills .skills-softSkills .softSkills {
+  width: 40%;
+}
+
+img {
+  width: 20px;
+  height: 20px;
 }/*# sourceMappingURL=style.css.map */
