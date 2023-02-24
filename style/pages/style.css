@@ -22,6 +22,12 @@ body {
   background: rgba(226, 226, 226, 0.836);
 }
 
+.separateur {
+  width: 100%;
+  height: 200px;
+  background: url("../../img/background.jpg") center/cover fixed;
+}
+
 header {
   height: 100vh;
   background: url("../../img/header-bkgd.jpeg") center/cover fixed;
@@ -115,12 +121,12 @@ header .title .chevron {
   height: 60px;
 }
 
-.firstMain-Skills-Certif {
+.second-Skills-Certif {
   width: 100%;
-  background: white;
+  background: rgba(228, 226, 226, 0.623);
 }
 
-.skills-certif {
+.skills-softSkills {
   width: 80%;
   height: 800px;
   display: flex;
@@ -129,15 +135,15 @@ header .title .chevron {
   margin: 0 auto;
   border: 2px solid rgba(131, 131, 131, 0.418);
 }
-.skills-certif .skills {
+.skills-softSkills .skills {
   height: 100%;
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
 }
-.skills-certif .skills .skills-title {
+.skills-softSkills .skills .skills-title {
   width: 100%;
   height: 100px;
   display: flex;
@@ -146,7 +152,7 @@ header .title .chevron {
   text-transform: uppercase;
   border: 1px solid black;
 }
-.skills-certif .skills .skills-graph {
+.skills-softSkills .skills .skills-graph {
   height: 100%;
   width: 100%;
   display: flex;
@@ -155,7 +161,11 @@ header .title .chevron {
   align-items: flex-start;
   margin: 0 10px;
 }
-.skills-certif .skills .skills-graph img {
+.skills-softSkills .skills .skills-graph h5 {
+  text-align: center;
+  margin: 5px 0;
+}
+.skills-softSkills .skills .skills-graph img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -163,15 +173,15 @@ header .title .chevron {
   width: 50px;
   height: 50px;
 }
-.skills-certif .certif {
+.skills-softSkills .softSkills {
   height: 100%;
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
 }
-.skills-certif .certif .certif-title {
+.skills-softSkills .softSkills .softSkills-title {
   width: 100%;
   height: 100px;
   display: flex;
@@ -179,4 +189,62 @@ header .title .chevron {
   align-items: center;
   text-transform: uppercase;
   border: 1px solid black;
+}
+.skills-softSkills .softSkills .softSkills-pic {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 0 10px;
+}
+
+.first-about {
+  width: 100%;
+  height: 800px;
+  background: red;
+}
+
+.about-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+.about-top #pictureProfile {
+  width: 200px;
+  height: 200px;
+  border-radius: 500px;
+}
+.about-top .about-title {
+  position: relative;
+  height: 100%;
+  margin: 35px auto;
+  color: white;
+}
+.about-top .about-title:after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 5px;
+  background: green;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 40px);
+}
+
+.about-bottom {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.about-bottom p {
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: justify;
 }/*# sourceMappingURL=style.css.map */
