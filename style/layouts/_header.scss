@@ -1,0 +1,98 @@
+header {
+    height: 100vh;
+    background: url("../../img/header-bkgd.jpeg") center/cover fixed;
+    &:before {
+        content: "";
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: black;
+        animation: AnimBefor 2.5s ease-in-out forwards;
+    }
+    & .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 80px;
+        background: rgba(179, 179, 179, 0.74);
+        & ul {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0 auto;       
+            & li {
+                text-transform: uppercase;
+                font-weight: 600;
+                cursor: pointer;
+                &:first-child {
+                    margin-right: 100px;
+                }
+                & span {
+                    color: white;
+                    font-size: 1.1rem;
+                }
+                &:nth-child(1n-1) {
+                    color: $colorblack;
+                    font-size: 0.8rem;
+                }
+                &:hover {
+                    color: white;
+                    transition: 0.4s ease;
+                }
+                }
+            }
+        }
+        & .title {
+            position: absolute;
+            width: 90%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-transform: uppercase;
+            text-align: center;
+      
+            & h3 {
+                text-align: center;
+                
+            }
+            & h1 {
+                margin: 40px 0 ;
+            }
+            
+            & .chevron {
+                
+                width: 22px;
+                height: 22px;
+                margin: 0 60px;
+            }
+           
+        }
+    }
+      
+     .scroll {
+       position: absolute;
+        width: 40px;
+        height: 40px;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+    
+    & #ovale {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        bottom: 0;
+    }
+    & #point  {
+        position: absolute;
+        bottom: 0;
+        left: -10px;
+        width: 60px;
+        height: 60px;
+    }
+    }
