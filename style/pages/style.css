@@ -19,7 +19,7 @@
 
 body {
   height: 2000px;
-  background: white;
+  background: rgba(226, 226, 226, 0.836);
 }
 
 header {
@@ -113,4 +113,18 @@ header .title .chevron {
   left: -10px;
   width: 60px;
   height: 60px;
+}
+
+.firstMain-Skills-Certif {
+  width: 100%;
+  background: red;
+}
+
+.skills-certif {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
