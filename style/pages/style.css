@@ -183,6 +183,7 @@ header .title .chevron {
 }
 .second-skills-softSkills .skills-softSkills .skills {
   width: 60%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -193,7 +194,6 @@ header .title .chevron {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  height: 100%;
 }
 .second-skills-softSkills .skills-softSkills .skills .skills-graph {
   height: 100%;
