@@ -193,9 +193,10 @@ header .title .chevron {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 .second-skills-softSkills .skills-softSkills .skills .skills-graph {
+  width: 80%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -204,9 +205,108 @@ header .title .chevron {
 }
 .second-skills-softSkills .skills-softSkills .softSkills {
   width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.second-skills-softSkills .skills-softSkills .softSkills .softSkills-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
 }
 
-img {
-  width: 20px;
-  height: 20px;
+.skills-all {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+}
+.skills-all .skills-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 20%;
+}
+.skills-all .skills-logo img {
+  width: 40px;
+  height: 40px;
+}
+.skills-all .skills-logo h5 {
+  font-size: 1rem;
+  margin: 10px auto;
+}
+.skills-all .all-bar {
+  position: relative;
+  width: 80%;
+  height: 100%;
+}
+.skills-all .all-bar span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 90%;
+  height: 15px;
+  background: grey;
+  margin: 0 40px;
+  border-radius: 10px;
+  box-shadow: 18px 13px 20px 2px black;
+}
+
+.after-html:after {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 90%;
+  background: red;
+  border-radius: 10px;
+}
+
+.after-css:after {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 90%;
+  background: red;
+  border-radius: 10px;
+}
+
+.after-sass:after {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 90%;
+  background: red;
+  border-radius: 10px;
+}
+
+.after-js:after {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 60%;
+  background: red;
+  border-radius: 10px;
+}
+
+.after-react:after {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 10%;
+  background: red;
+  border-radius: 10px;
+}
+
+.after-cafe:after {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 95%;
+  background: red;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */

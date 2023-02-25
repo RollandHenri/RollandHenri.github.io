@@ -18,10 +18,11 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin: 0 auto;
+                margin: 40px auto;
                 
             }
             & .skills-graph {
+                width: 80%;
                 height: 100%;
                 display: flex;
                 flex-direction: column;
@@ -31,6 +32,17 @@
         }
         & .softSkills {
             width: 40%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+            & .softSkills-title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 40px auto;
+            }
         }
     }
 
@@ -41,8 +53,3 @@
 
 
 
-
-img {
-    width: 20px;
-    height: 20px;
-}
