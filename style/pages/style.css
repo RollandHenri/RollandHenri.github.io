@@ -383,4 +383,89 @@ header .title .chevron {
   width: 95%;
   background: linear-gradient(to left, rgb(48, 48, 88) 50%, white);
   border-radius: 10px;
+}
+
+.third-services .services-picture {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.third-services .services-picture h3 {
+  position: relative;
+  margin: 80px auto;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+.third-services .services-picture h3:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: rgba(29, 29, 29, 0.685);
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.third-services .services-picture img {
+  width: 20%;
+  height: 20%;
+}
+.third-services .services-main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 30px auto;
+  width: 90%;
+  height: 350px;
+}
+.third-services .services-main .service-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  height: 100%;
+  width: 80%;
+}
+.third-services .services-main .service-left .service-left-code {
+  height: 50%;
+  width: 80%;
+}
+.third-services .services-main .service-left .service-left-seo {
+  height: 50%;
+  width: 80%;
+}
+.third-services .services-main .service-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  height: 100%;
+  width: 80%;
+}
+.third-services .services-main .service-right .service-right-dev {
+  height: 50%;
+  width: 80%;
+}
+.third-services .services-main .service-right .service-right-ligne {
+  height: 50%;
+  width: 80%;
+}
+
+.service-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px auto;
+  height: 25%;
+}
+.service-title img {
+  width: 30px;
+  height: 30px;
+  margin: 0 40px;
+}
+.service-title h3 {
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */
