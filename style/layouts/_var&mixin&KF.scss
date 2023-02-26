@@ -12,6 +12,15 @@
   }
 }
 
+@keyframes scrollAnim {
+  from {
+    bottom: 8px;
+  }
+  to {
+    bottom: -25px;
+  }
+}
+
 /**** VariableColor ****/
 
 $colorblack: rgb(0, 0, 0);
