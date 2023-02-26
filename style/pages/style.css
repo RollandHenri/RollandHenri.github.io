@@ -417,7 +417,7 @@ header .title .chevron {
   align-items: flex-start;
   margin: 30px auto;
   width: 90%;
-  height: 350px;
+  height: 580px;
 }
 .third-services .services-main .service-left {
   display: flex;
@@ -429,11 +429,15 @@ header .title .chevron {
   width: 80%;
 }
 .third-services .services-main .service-left .service-left-code {
-  height: 50%;
+  height: 190px;
   width: 80%;
 }
 .third-services .services-main .service-left .service-left-seo {
-  height: 50%;
+  height: 190px;
+  width: 80%;
+}
+.third-services .services-main .service-left .service-left-upload {
+  height: 190px;
   width: 80%;
 }
 .third-services .services-main .service-right {
@@ -446,11 +450,15 @@ header .title .chevron {
   width: 80%;
 }
 .third-services .services-main .service-right .service-right-dev {
-  height: 50%;
+  height: 190px;
   width: 80%;
 }
 .third-services .services-main .service-right .service-right-ligne {
-  height: 50%;
+  height: 190px;
+  width: 80%;
+}
+.third-services .services-main .service-right .service-right-communication {
+  height: 190px;
   width: 80%;
 }
 

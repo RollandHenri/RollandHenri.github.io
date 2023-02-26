@@ -31,7 +31,7 @@
     align-items: flex-start;
     margin: 30px auto;
     width: 90%;
-    height: 350px;
+    height: 580px;
     & .service-left {
       display: flex;
       flex-direction: column;
@@ -41,11 +41,15 @@
       height: 100%;
       width: 80%;
       & .service-left-code {
-        height: 50%;
+        height: 190px;
         width: 80%;
       }
       & .service-left-seo {
-        height: 50%;
+        height: 190px;
+        width: 80%;
+      }
+      & .service-left-upload {
+        height: 190px;
         width: 80%;
       }
     }
@@ -58,11 +62,15 @@
       height: 100%;
       width: 80%;
       & .service-right-dev {
-        height: 50%;
+        height: 190px;
         width: 80%;
       }
       & .service-right-ligne {
-        height: 50%;
+        height: 190px;
+        width: 80%;
+      }
+      & .service-right-communication {
+        height: 190px;
         width: 80%;
       }
     }
