@@ -43,7 +43,7 @@
   position: absolute;
   height: 15px;
   width: 90%;
-  background: linear-gradient(to right, $colorblack, $colorBar 50%);
+  background: linear-gradient(to left, $colorBarII 50%, $colorBarI);
   border-radius: 10px;
 }
 
@@ -52,7 +52,7 @@
   position: absolute;
   height: 15px;
   width: 90%;
-  background: linear-gradient(to right, $colorblack, $colorBar 50%);
+  background: linear-gradient(to left, $colorBarII 50%, $colorBarI);
   border-radius: 10px;
 }
 
@@ -61,7 +61,7 @@
   position: absolute;
   height: 15px;
   width: 90%;
-  background: linear-gradient(to right, $colorblack, $colorBar 50%);
+  background: linear-gradient(to left, $colorBarII 50%, $colorBarI);
   border-radius: 10px;
 }
 
@@ -70,7 +70,7 @@
   position: absolute;
   height: 15px;
   width: 60%;
-  background: linear-gradient(to right, $colorblack, $colorBar 50%);
+  background: linear-gradient(to left, $colorBarII 50%, $colorBarI);
   border-radius: 10px;
 }
 
@@ -79,7 +79,7 @@
   position: absolute;
   height: 15px;
   width: 10%;
-  background: linear-gradient(to right, $colorblack, $colorBar 50%);
+  background: linear-gradient(to left, $colorBarII 50%, $colorBarI);
   border-radius: 10px;
 }
 
@@ -88,6 +88,6 @@
   position: absolute;
   height: 15px;
   width: 95%;
-  background: linear-gradient(to right, $colorblack, $colorBar 50%);
+  background: linear-gradient(to left, $colorBarII 50%, $colorBarI);
   border-radius: 10px;
 }

@@ -315,7 +315,7 @@ header .title .chevron {
   position: absolute;
   height: 15px;
   width: 90%;
-  background: linear-gradient(to right, rgb(0, 0, 0), white 50%);
+  background: linear-gradient(to left, rgb(23, 23, 61) 50%, white);
   border-radius: 10px;
 }
 
@@ -324,7 +324,7 @@ header .title .chevron {
   position: absolute;
   height: 15px;
   width: 90%;
-  background: linear-gradient(to right, rgb(0, 0, 0), white 50%);
+  background: linear-gradient(to left, rgb(23, 23, 61) 50%, white);
   border-radius: 10px;
 }
 
@@ -333,7 +333,7 @@ header .title .chevron {
   position: absolute;
   height: 15px;
   width: 90%;
-  background: linear-gradient(to right, rgb(0, 0, 0), white 50%);
+  background: linear-gradient(to left, rgb(23, 23, 61) 50%, white);
   border-radius: 10px;
 }
 
@@ -342,7 +342,7 @@ header .title .chevron {
   position: absolute;
   height: 15px;
   width: 60%;
-  background: linear-gradient(to right, rgb(0, 0, 0), white 50%);
+  background: linear-gradient(to left, rgb(23, 23, 61) 50%, white);
   border-radius: 10px;
 }
 
@@ -351,7 +351,7 @@ header .title .chevron {
   position: absolute;
   height: 15px;
   width: 10%;
-  background: linear-gradient(to right, rgb(0, 0, 0), white 50%);
+  background: linear-gradient(to left, rgb(23, 23, 61) 50%, white);
   border-radius: 10px;
 }
 
@@ -360,6 +360,6 @@ header .title .chevron {
   position: absolute;
   height: 15px;
   width: 95%;
-  background: linear-gradient(to right, rgb(0, 0, 0), white 50%);
+  background: linear-gradient(to left, rgb(23, 23, 61) 50%, white);
   border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */
