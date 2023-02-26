@@ -196,6 +196,7 @@ header .title .chevron {
   width: 150px;
   border-radius: 30px;
   box-shadow: inset 2px 2px 8px 2px rgb(48, 48, 88);
+  cursor: pointer;
 }
 
 .second-skills-softSkills {
