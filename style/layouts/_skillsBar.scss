@@ -19,75 +19,93 @@
       margin: 10px auto;
     }
   }
+}
 
-  & .all-bar {
-    position: relative;
-    width: 80%;
-    height: 100%;
-    & span {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 80%;
-      height: 15px;
-      background: grey;
-      margin: 0 40px;
-      border-radius: 10px;
-      box-shadow: 18px 13px 20px 2px black;
-    }
+.all-bar {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  & .full::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 90%;
+    height: 15px;
+    border-radius: 30px;
+    background: grey;
+    box-shadow: 8px 8px 20px 1px black;
   }
 }
 
-.after-html:after {
-  content: "";
+.after-html {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   height: 15px;
-  width: 90%;
+  width: 0%;
+  border-radius: 30px;
   background: linear-gradient(to left, $colorBarII 50%, $colorBarI);
-  border-radius: 10px;
+  z-index: 2;
+  transition: 1s ease-in-out all;
 }
 
-.after-css:after {
-  content: "";
+.after-css {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   height: 15px;
-  width: 90%;
+  width: 0%;
+  border-radius: 30px;
   background: linear-gradient(to left, $colorBarII 50%, $colorBarI);
-  border-radius: 10px;
+  z-index: 2;
+  transition: 1s ease-in-out all;
 }
 
-.after-sass:after {
-  content: "";
+.after-sass {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   height: 15px;
-  width: 90%;
+  width: 0%;
+  border-radius: 30px;
   background: linear-gradient(to left, $colorBarII 50%, $colorBarI);
-  border-radius: 10px;
+  z-index: 2;
+  transition: 1s ease-in-out all;
 }
 
-.after-js:after {
-  content: "";
+.after-js {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   height: 15px;
-  width: 60%;
+  width: 0%;
+  border-radius: 30px;
   background: linear-gradient(to left, $colorBarII 50%, $colorBarI);
-  border-radius: 10px;
+  z-index: 2;
+  transition: 1s ease-in-out all;
 }
 
-.after-react:after {
-  content: "";
+.after-react {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   height: 15px;
-  width: 10%;
+  width: 0%;
+  border-radius: 30px;
   background: linear-gradient(to left, $colorBarII 50%, $colorBarI);
-  border-radius: 10px;
+  z-index: 2;
+  transition: 1s ease-in-out all;
 }
 
-.after-cafe:after {
-  content: "";
+.after-cafe {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   height: 15px;
-  width: 95%;
+  width: 0%;
+  border-radius: 30px;
   background: linear-gradient(to left, $colorBarII 50%, $colorBarI);
-  border-radius: 10px;
+  z-index: 2;
+  transition: 1s ease-in-out all;
 }
