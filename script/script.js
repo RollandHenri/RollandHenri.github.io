@@ -14,6 +14,10 @@ const skillJs = document.querySelector(".after-js");
 const skillReact = document.querySelector(".after-react");
 const skillCafe = document.querySelector(".after-cafe");
 
+/**** Variables Soft Skills  ****/
+
+const softskill = document.querySelector(".softSkills-picture");
+console.log(softskill);
 /**** NavBar Height Anim ****/
 
 window.addEventListener("scroll", () => {
@@ -88,5 +92,6 @@ window.addEventListener("scroll", () => {
   }
   if (scrollratiobar > 1.267) {
     skillCafe.style.width = "88%";
+    softskill.style.opacity = 1;
   }
 });
