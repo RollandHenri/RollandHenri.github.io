@@ -71,22 +71,22 @@ window.addEventListener("scroll", () => {
 window.addEventListener("scroll", () => {
   let scrollratiobar = (window.scrollY + window.innerHeight) / document.body.offsetHeight;
 
-  if (scrollratiobar > 1.01) {
+  if (scrollratiobar > 1.08) {
     skillHtml.style.width = "85%";
   }
-  if (scrollratiobar > 1.04) {
+  if (scrollratiobar > 1.11) {
     skillCss.style.width = "80%";
   }
-  if (scrollratiobar > 1.083) {
+  if (scrollratiobar > 1.15) {
     skillSass.style.width = "70%";
   }
-  if (scrollratiobar > 1.12) {
+  if (scrollratiobar > 1.184) {
     skillJs.style.width = "60%";
   }
-  if (scrollratiobar > 1.16) {
+  if (scrollratiobar > 1.227) {
     skillReact.style.width = "30%";
   }
-  if (scrollratiobar > 1.2) {
+  if (scrollratiobar > 1.267) {
     skillCafe.style.width = "88%";
   }
 });

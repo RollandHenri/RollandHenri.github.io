@@ -355,6 +355,7 @@ header .title .chevron {
   background: linear-gradient(to left, rgb(48, 48, 88) 50%, white);
   z-index: 2;
   transition: 1s ease-in-out all;
+  transition-delay: 1s;
 }
 
 .after-css {
@@ -367,6 +368,7 @@ header .title .chevron {
   background: linear-gradient(to left, rgb(48, 48, 88) 50%, white);
   z-index: 2;
   transition: 1s ease-in-out all;
+  transition-delay: 1s;
 }
 
 .after-sass {
@@ -379,6 +381,7 @@ header .title .chevron {
   background: linear-gradient(to left, rgb(48, 48, 88) 50%, white);
   z-index: 2;
   transition: 1s ease-in-out all;
+  transition-delay: 1s;
 }
 
 .after-js {
@@ -391,6 +394,7 @@ header .title .chevron {
   background: linear-gradient(to left, rgb(48, 48, 88) 50%, white);
   z-index: 2;
   transition: 1s ease-in-out all;
+  transition-delay: 1s;
 }
 
 .after-react {
@@ -403,6 +407,7 @@ header .title .chevron {
   background: linear-gradient(to left, rgb(48, 48, 88) 50%, white);
   z-index: 2;
   transition: 1s ease-in-out all;
+  transition-delay: 1s;
 }
 
 .after-cafe {
@@ -415,6 +420,7 @@ header .title .chevron {
   background: linear-gradient(to left, rgb(48, 48, 88) 50%, white);
   z-index: 2;
   transition: 1s ease-in-out all;
+  transition-delay: 1s;
 }
 
 .third-services .services-picture {
