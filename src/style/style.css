@@ -69,7 +69,7 @@ body .nav_button,
 html .nav_button {
   position: fixed;
   visibility: hidden;
-  font-size: 2.5rem;
+  font-size: 2rem;
   top: 20px;
   left: -80px;
   height: 50px;
@@ -91,7 +91,7 @@ body .nav_button_close,
 html .nav_button_close {
   position: fixed;
   visibility: visible;
-  font-size: 2.5rem;
+  font-size: 2rem;
   top: 20px;
   left: 22px;
   height: 50px;
@@ -263,6 +263,7 @@ header {
   align-items: center;
   margin: 0 auto;
   background: url("/public/img/bkgd_header.webp") center/cover;
+  background-attachment: fixed;
 }
 header:after {
   content: "";

@@ -8,6 +8,7 @@ header {
   align-items: center;
   margin: 0 auto;
   background: url("/public/img/bkgd_header.webp") center / cover;
+  background-attachment: fixed;
   &:after {
     content: "";
     position: absolute;
