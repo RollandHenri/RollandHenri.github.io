@@ -660,6 +660,13 @@ header .header_right_title_anim .active {
   align-items: start;
   margin: 0 auto 30px auto;
 }
+@media screen and (max-width: 720px) {
+  .actu .actu_container {
+    padding: 0 10px;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
 .actu .actu_container .actu_container_left {
   display: flex;
   justify-content: stretch;
@@ -675,6 +682,10 @@ header .header_right_title_anim .active {
   }
 }
 @media screen and (max-width: 720px) {
+  .actu .actu_container .actu_container_left {
+    width: 100%;
+    justify-content: space-between;
+  }
   .actu .actu_container .actu_container_left img {
     width: 80px;
     height: 80px;
@@ -684,6 +695,11 @@ header .header_right_title_anim .active {
   padding: 0 20px;
   color: white;
   font-size: 1.2rem;
+}
+@media screen and (max-width: 720px) {
+  .actu .actu_container .actu_container_left p {
+    font-size: 1rem;
+  }
 }
 .actu .actu_container .actu_container_right {
   display: flex;
@@ -709,6 +725,11 @@ header .header_right_title_anim .active {
   font-size: 1.2rem;
   color: white;
   padding: 0 20px;
+}
+@media screen and (max-width: 720px) {
+  .actu .actu_container .actu_container_right p {
+    font-size: 1rem;
+  }
 }
 .actu img {
   width: 150px;
