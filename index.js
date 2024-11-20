@@ -75,13 +75,13 @@ window.addEventListener("scroll", () => {
 menuOpen.addEventListener("click", () => {
   menuOpen.style.transform = "translateX(-80px)";
   menuClose.style.transform = "translateX(0)";
-  menuClose.style.opacity = "1";
+  menuClose.style.opacity = "0.8";
 });
 
 menuClose.addEventListener("click", () => {
   menuClose.style.opacity = "0";
   menuOpen.style.transform = "translateX(0)";
-  menuOpen.style.opacity = "1";
+  menuOpen.style.opacity = "0.8";
 });
 
 navlink.forEach((item) => {
@@ -89,7 +89,7 @@ navlink.forEach((item) => {
     navbar.classList.remove("nav_active");
     menuClose.style.opacity = "0";
     menuOpen.style.transform = "translateX(0)";
-    menuOpen.style.opacity = "1";
+    menuOpen.style.opacity = "0.8";
   });
 });
 

@@ -77,7 +77,6 @@ nav {
       & li {
         max-height: 100px;
         width: 100%;
-        background: blue;
         & a {
           width: auto;
         }
@@ -107,10 +106,17 @@ nav {
           width: 39px;
           height: 39px;
           border-radius: 50%;
+          @include phone {
+            width: 47px;
+            height: 47px;
+          }
         }
         & i {
           font-size: 2rem;
           cursor: pointer;
+          @include phone {
+            font-size: 2.5rem;
+          }
         }
       }
     }

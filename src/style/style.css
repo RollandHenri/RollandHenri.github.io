@@ -74,7 +74,6 @@ html .nav_button {
   left: -80px;
   height: 50px;
   width: 50px;
-  border-radius: 50%;
   opacity: 0;
   transition: 0.5s ease all;
   z-index: 10;
@@ -97,7 +96,6 @@ html .nav_button_close {
   left: 22px;
   height: 50px;
   width: 50px;
-  border-radius: 50%;
   opacity: 0;
   transition: 0.3s ease all;
   z-index: 9;
@@ -201,7 +199,6 @@ nav .nav_social {
   nav .nav_social li {
     max-height: 100px;
     width: 100%;
-    background: blue;
   }
   nav .nav_social li a {
     width: auto;
@@ -234,9 +231,20 @@ nav .nav_social li a img {
   height: 39px;
   border-radius: 50%;
 }
+@media screen and (max-width: 720px) {
+  nav .nav_social li a img {
+    width: 47px;
+    height: 47px;
+  }
+}
 nav .nav_social li a i {
   font-size: 2rem;
   cursor: pointer;
+}
+@media screen and (max-width: 720px) {
+  nav .nav_social li a i {
+    font-size: 2.5rem;
+  }
 }
 
 /**** nav phone ****/
