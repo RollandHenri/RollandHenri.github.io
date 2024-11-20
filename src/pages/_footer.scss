@@ -1,0 +1,9 @@
+footer {
+  height: 100px;
+  background: black;
+  & p {
+    color: red;
+    text-align: center;
+    font-size: 2rem;
+  }
+}

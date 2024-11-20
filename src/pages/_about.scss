@@ -1,0 +1,97 @@
+.about {
+  position: relative;
+  height: 65vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  @include tablette {
+    flex-direction: column;
+    min-height: max-content;
+    max-height: 100%;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(black, transparent);
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(transparent 15%, black 75%);
+  }
+
+  & #bkgd_video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  & .about_pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    max-height: 700px;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: 0.8s ease-in-out;
+
+    & img {
+      max-width: 380px;
+      max-height: 550px;
+      min-width: 250px;
+      min-height: 380px;
+      border-radius: 25% 10% 25% 10%;
+      filter: drop-shadow(0 0 0.75rem white);
+      @include tablette {
+        height: 150px;
+        margin: 100px auto 50px auto;
+      }
+    }
+  }
+  & .bkgd_blur {
+    max-width: 60%;
+    max-height: 700px;
+    margin: 10px 40px;
+    background: rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 35px;
+    transform: translateX(100px);
+    opacity: 0;
+    transition: 0.5s ease;
+    @include tablette {
+      max-width: 90%;
+      margin-bottom: 100px;
+    }
+    & h2 {
+      color: rgb(255, 255, 255);
+      text-align: center;
+      font-size: 2.5rem;
+      padding: 20px;
+      font-family: "Dancing Script";
+    }
+    & p {
+      color: rgb(255, 255, 255);
+      font-size: 1.3rem;
+      letter-spacing: 2px;
+      padding: 50px;
+      @include tablette {
+        padding: 20px;
+        font-size: 1rem;
+      }
+    }
+  }
+}

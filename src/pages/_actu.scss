@@ -1,0 +1,64 @@
+.actu {
+  position: relative;
+  width: 100%;
+  height: max-content;
+  padding: 60px 0;
+  background-color: rgba(0, 0, 0, 0.705);
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(transparent, black 60%);
+  }
+  & h3 {
+    color: white;
+    text-align: center;
+    font-family: "Dancing Script";
+    font-size: 3rem;
+    text-align: center;
+    padding: 30px 0;
+  }
+  & .actu_container {
+    width: 100%;
+    height: 300px;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    margin: 0 auto 30px auto;
+    & .actu_container_left {
+      display: flex;
+      justify-content: stretch;
+      align-items: center;
+      transform: translateX(400px);
+      opacity: 0;
+      transition: 0.5s ease;
+      & p {
+        padding: 0 20px;
+        color: white;
+        font-size: 1.2rem;
+      }
+    }
+    & .actu_container_right {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transform: translateX(-400px);
+      opacity: 0;
+      transition: 0.5s ease;
+      & p {
+        font-size: 1.2rem;
+        color: white;
+        padding: 0 20px;
+      }
+    }
+  }
+  img {
+    width: 150px;
+    height: 150px;
+  }
+}
