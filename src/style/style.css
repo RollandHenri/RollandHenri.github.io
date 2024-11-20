@@ -498,6 +498,11 @@ header .header_right_title_anim .active {
     font-size: 1.2rem;
   }
 }
+@media screen and (max-width: 720px) {
+  .book .book_container .book_card:hover > .about_reveal h4 {
+    display: none;
+  }
+}
 .book .book_container .book_card:hover > .about_reveal p {
   opacity: 1;
   padding: 0 10px;
@@ -537,6 +542,12 @@ header .header_right_title_anim .active {
     min-width: 550px;
   }
 }
+@media screen and (max-width: 720px) {
+  .book .book_container .book_card .about_reveal {
+    width: 400px;
+    min-width: 400px;
+  }
+}
 .book .book_container .book_card .about_reveal p {
   opacity: 0;
   transition: 0.2s ease opacity;
@@ -552,16 +563,34 @@ header .header_right_title_anim .active {
   opacity: 0;
   visibility: hidden;
 }
+@media screen and (max-width: 720px) {
+  .book .book_container .book_card .about_reveal .buy_link {
+    padding: 10px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .book .book_container .book_card .about_reveal .buy_link span {
   font-size: 1.2rem;
   font-style: italic;
   transition: 0.2s ease;
+}
+@media screen and (max-width: 720px) {
+  .book .book_container .book_card .about_reveal .buy_link span {
+    font-size: 1rem;
+  }
 }
 .book .book_container .book_card .about_reveal .buy_link ul {
   width: 50%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+@media screen and (max-width: 720px) {
+  .book .book_container .book_card .about_reveal .buy_link ul {
+    width: 100%;
+    justify-content: space-around;
+  }
 }
 .book .book_container .book_card .about_reveal .buy_link ul i {
   font-size: 1.7rem;
@@ -570,6 +599,12 @@ header .header_right_title_anim .active {
   width: 45px;
   height: 45px;
   border-radius: 50%;
+}
+@media screen and (max-width: 720px) {
+  .book .book_container .book_card .about_reveal .buy_link ul img {
+    width: 30px;
+    height: 30px;
+  }
 }
 .book .book_1 {
   background: url("/public/img/book_2.webp") center/cover;
@@ -639,6 +674,12 @@ header .header_right_title_anim .active {
     opacity: 1;
   }
 }
+@media screen and (max-width: 720px) {
+  .actu .actu_container .actu_container_left img {
+    width: 80px;
+    height: 80px;
+  }
+}
 .actu .actu_container .actu_container_left p {
   padding: 0 20px;
   color: white;
@@ -656,6 +697,12 @@ header .header_right_title_anim .active {
   .actu .actu_container .actu_container_right {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+@media screen and (max-width: 720px) {
+  .actu .actu_container .actu_container_right img {
+    width: 80px;
+    height: 80px;
   }
 }
 .actu .actu_container .actu_container_right p {
