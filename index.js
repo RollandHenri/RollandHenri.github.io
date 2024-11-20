@@ -6,9 +6,9 @@ const titleCarousel = document.querySelectorAll(".title_carousel");
 const nbSlide = titleCarousel.length;
 
 const menuOpen = document.querySelector(".nav_button");
-console.log(menuOpen);
 const menuClose = document.querySelector(".nav_button_close");
-console.log(menuClose);
+const navlink = document.querySelectorAll(".nav_link li");
+console.log(navlink);
 
 let count = 0;
 // console.log(nbSlide);
@@ -63,7 +63,6 @@ window.addEventListener("scroll", () => {
 });
 
 window.addEventListener("scroll", () => {
-  console.log(window.scrollY);
   if (window.scrollY >= 500) {
     menuOpen.style.color = "white";
   } else {
@@ -83,6 +82,15 @@ menuClose.addEventListener("click", () => {
   menuClose.style.opacity = "0";
   menuOpen.style.transform = "translateX(0)";
   menuOpen.style.opacity = "1";
+});
+
+navlink.forEach((item) => {
+  item.addEventListener("click", () => {
+    navbar.classList.remove("nav_active");
+    menuClose.style.opacity = "0";
+    menuOpen.style.transform = "translateX(0)";
+    menuOpen.style.opacity = "1";
+  });
 });
 
 /**** Devise Querry ****/
