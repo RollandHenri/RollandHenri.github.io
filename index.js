@@ -4,6 +4,12 @@ const titleTxt = "Amandine HENRY";
 const navbar = document.querySelector("nav");
 const titleCarousel = document.querySelectorAll(".title_carousel");
 const nbSlide = titleCarousel.length;
+
+const menuOpen = document.querySelector(".nav_button");
+console.log(menuOpen);
+const menuClose = document.querySelector(".nav_button_close");
+console.log(menuClose);
+
 let count = 0;
 // console.log(nbSlide);
 
@@ -56,10 +62,37 @@ window.addEventListener("scroll", () => {
   lastScroll = window.scrollY;
 });
 
+window.addEventListener("scroll", () => {
+  console.log(window.scrollY);
+  if (window.scrollY >= 500) {
+    menuOpen.style.color = "white";
+  } else {
+    menuOpen.style.color = "black";
+  }
+});
+
+/**** Menu logo Anim ****/
+
+menuOpen.addEventListener("click", () => {
+  menuOpen.style.transform = "translateX(-80px)";
+  menuClose.style.transform = "translateX(0)";
+  menuClose.style.opacity = "1";
+});
+
+menuClose.addEventListener("click", () => {
+  menuClose.style.opacity = "0";
+  menuOpen.style.transform = "translateX(0)";
+  menuOpen.style.opacity = "1";
+});
+
 /**** Devise Querry ****/
 
-navButton.addEventListener("click", () => {
-  navbar.classList.toggle("nav_active");
+menuOpen.addEventListener("click", () => {
+  navbar.classList.add("nav_active");
+});
+
+menuClose.addEventListener("click", () => {
+  navbar.classList.remove("nav_active");
 });
 
 /**** Run Function ****/
