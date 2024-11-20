@@ -35,7 +35,7 @@ const translateYNegObserver = new IntersectionObserver(
     }
   },
   {
-    threshold: 0.9,
+    threshold: 0.3,
   }
 );
 
@@ -58,12 +58,15 @@ const translateXObserver = new IntersectionObserver(
 /**** Observer translateY****/
 
 translateYObserver.observe(book1);
-translateYNegObserver.observe(book2);
-translateYObserver.observe(book3);
 
 /**** Observer translateX ****/
 
+translateXObserver.observe(book3);
+translateXObserver.observe(book2);
 translateXObserver.observe(aboutContainer);
 translateXObserver.observe(picProfile);
-translateXObserver.observe(actuLeft);
-translateXObserver.observe(actuRight);
+
+if (document.body.clientWidth > 721) {
+  translateXObserver.observe(actuRight);
+  translateXObserver.observe(actuLeft);
+}

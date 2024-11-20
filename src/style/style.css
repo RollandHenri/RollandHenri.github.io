@@ -360,7 +360,7 @@ header .header_right_title_anim .active {
 @media screen and (max-width: 1050px) {
   .about .about_pic img {
     height: 150px;
-    margin: 100px auto 50px auto;
+    margin: 10px auto 100px auto;
   }
 }
 .about .bkgd_blur {
@@ -378,7 +378,7 @@ header .header_right_title_anim .active {
 @media screen and (max-width: 1050px) {
   .about .bkgd_blur {
     max-width: 90%;
-    margin-bottom: 100px;
+    margin: 50px auto;
   }
 }
 .about .bkgd_blur h2 {
@@ -429,6 +429,7 @@ header .header_right_title_anim .active {
   font-size: 3rem;
 }
 .book .book_container {
+  position: relative;
   width: 95%;
   height: -moz-max-content;
   height: max-content;
@@ -438,6 +439,13 @@ header .header_right_title_anim .active {
   gap: 40px;
   margin: 0 auto;
   padding-bottom: 80px;
+}
+@media screen and (max-width: 1050px) {
+  .book .book_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .book .book_container .book_card {
   position: relative;
@@ -450,6 +458,12 @@ header .header_right_title_anim .active {
   padding: 50px;
   background-color: green;
   transition: all 0.8s ease;
+}
+@media screen and (max-width: 1050px) {
+  .book .book_container .book_card {
+    width: 90%;
+    height: 400px;
+  }
 }
 .book .book_container .book_card:hover {
   width: 60%;
@@ -465,12 +479,24 @@ header .header_right_title_anim .active {
   font-size: 2.5rem;
   font-family: "Dancing Script";
 }
+@media screen and (max-width: 1050px) {
+  .book .book_container .book_card:hover > .about_reveal h3 {
+    padding: 10px;
+    font-size: 2rem;
+  }
+}
 .book .book_container .book_card:hover > .about_reveal h4 {
   text-align: center;
   padding-bottom: 20px;
   font-size: 1.5rem;
   font-weight: 400;
   font-family: "Dancing Script";
+}
+@media screen and (max-width: 1050px) {
+  .book .book_container .book_card:hover > .about_reveal h4 {
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+  }
 }
 .book .book_container .book_card:hover > .about_reveal p {
   opacity: 1;
@@ -480,6 +506,11 @@ header .header_right_title_anim .active {
   font-weight: 600;
   transition: 0.3s ease opacity;
   transition-delay: 1s;
+}
+@media screen and (max-width: 1050px) {
+  .book .book_container .book_card:hover > .about_reveal p {
+    font-size: 0.9rem;
+  }
 }
 .book .book_container .book_card:hover > .about_reveal .buy_link {
   opacity: 1;
@@ -499,6 +530,12 @@ header .header_right_title_anim .active {
   cursor: default;
   opacity: 1;
   transition: 0.6s ease;
+}
+@media screen and (max-width: 1050px) {
+  .book .book_container .book_card .about_reveal {
+    width: 550px;
+    min-width: 550px;
+  }
 }
 .book .book_container .book_card .about_reveal p {
   opacity: 0;
@@ -536,19 +573,19 @@ header .header_right_title_anim .active {
 }
 .book .book_1 {
   background: url("/public/img/book_2.webp") center/cover;
-  transform: translateY(-200px);
+  transform: translateY(300px);
   opacity: 0;
-  transition: 0.5s ease;
+  transition: translateY 0.5s ease;
 }
 .book .book_2 {
   background: url("/public/img/book_1.webp") center/cover;
-  transform: translateY(300px);
+  transform: translateX(-300px);
   opacity: 0;
   transition: 0.5s ease;
 }
 .book .book_3 {
   background: green;
-  transform: translateY(300px);
+  transform: translateX(300px);
   opacity: 0;
   transition: 0.5s ease;
 }
@@ -596,6 +633,12 @@ header .header_right_title_anim .active {
   opacity: 0;
   transition: 0.5s ease;
 }
+@media screen and (max-width: 1050px) {
+  .actu .actu_container .actu_container_left {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .actu .actu_container .actu_container_left p {
   padding: 0 20px;
   color: white;
@@ -608,6 +651,12 @@ header .header_right_title_anim .active {
   transform: translateX(-400px);
   opacity: 0;
   transition: 0.5s ease;
+}
+@media screen and (max-width: 1050px) {
+  .actu .actu_container .actu_container_right {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 .actu .actu_container .actu_container_right p {
   font-size: 1.2rem;

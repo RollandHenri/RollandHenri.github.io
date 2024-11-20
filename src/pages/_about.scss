@@ -58,7 +58,7 @@
       filter: drop-shadow(0 0 0.75rem white);
       @include tablette {
         height: 150px;
-        margin: 100px auto 50px auto;
+        margin: 10px auto 100px auto;
       }
     }
   }
@@ -74,7 +74,7 @@
     transition: 0.5s ease;
     @include tablette {
       max-width: 90%;
-      margin-bottom: 100px;
+      margin: 50px auto;
     }
     & h2 {
       color: rgb(255, 255, 255);

@@ -37,6 +37,10 @@
       transform: translateX(400px);
       opacity: 0;
       transition: 0.5s ease;
+      @include tablette {
+        transform: translateX(0);
+        opacity: 1;
+      }
       & p {
         padding: 0 20px;
         color: white;
@@ -50,6 +54,10 @@
       transform: translateX(-400px);
       opacity: 0;
       transition: 0.5s ease;
+      @include tablette {
+        transform: translateX(0);
+        opacity: 1;
+      }
       & p {
         font-size: 1.2rem;
         color: white;
