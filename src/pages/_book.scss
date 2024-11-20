@@ -157,19 +157,19 @@
   }
   & .book_1 {
     background: url("/public/img/book_2.webp") center / cover;
-    transform: translateY(300px);
+    transform: translateY(200px);
     opacity: 0;
     transition: translateY 0.5s ease;
   }
   & .book_2 {
     background: url("/public/img/book_1.webp") center / cover;
-    transform: translateX(-300px);
+    transform: translateX(-200px);
     opacity: 0;
     transition: 0.5s ease;
   }
   & .book_3 {
     background: green;
-    transform: translateX(300px);
+    transform: translateX(200px);
     opacity: 0;
     transition: 0.5s ease;
   }
