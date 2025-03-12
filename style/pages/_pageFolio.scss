@@ -10,6 +10,9 @@
     rgba(87, 22, 55, 1) 37%,
     rgba(0, 0, 0, 1) 70%
   );
+  @include tablet {
+    height: auto;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -35,6 +38,10 @@
       font-size: 2.5rem;
       letter-spacing: 2px;
       font-family: "Poiret One", sans-serif;
+      @include tablet {
+        text-align: center;
+        margin: 100px auto;
+      }
       &::after {
         content: "";
         position: absolute;
@@ -54,6 +61,10 @@
       margin: 0 auto;
       width: 100%;
       height: 550px;
+      @include tablet {
+        flex-direction: column;
+        height: auto;
+      }
       & .folio1Carousel {
         position: relative;
         max-width: 900px;
@@ -61,6 +72,11 @@
         width: 50%;
         height: 550px;
         max-height: 550px;
+        @include tablet {
+          width: 95%;
+          height: 550px;
+          margin-bottom: 60px;
+        }
         & .btn {
           position: absolute;
           top: 50%;
@@ -130,6 +146,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: start;
+        @include tablet {
+          width: 95%;
+          height: auto;
+          margin: 20px auto;
+        }
         & p {
           margin: 0 0 20px 10px;
           color: $color3;
@@ -138,5 +159,20 @@
         }
       }
     }
+  }
+}
+
+.closeMobile {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 40;
+  cursor: pointer;
+  @include middle {
+    display: block;
+  }
+  & i {
+    font-size: 2rem;
   }
 }

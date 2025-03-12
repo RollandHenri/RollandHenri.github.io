@@ -35,6 +35,12 @@
       justify-content: space-around;
       align-items: center;
       margin: 0 auto;
+      & #secondContainer {
+        @include middle {
+          flex-direction: column-reverse;
+        }
+      }
+
       & .listCardContainer {
         width: 90%;
         height: 100%;
@@ -46,6 +52,7 @@
         @include middle {
           flex-direction: column;
         }
+
         & .listCard {
           display: flex;
           justify-content: center;

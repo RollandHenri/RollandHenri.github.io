@@ -8,17 +8,29 @@ const sildes = document.querySelectorAll(".slide");
 
 console.log(sildes);
 
+/*--------- Variable Nav Mobile -----------*/
+
+const openMenu = document.querySelector(".menuMobile");
+const menu = document.querySelector(".nav");
+const menuClose = document.querySelector(".closeMobile");
+const link = document.querySelectorAll("nav a");
+console.log(menuClose);
+
 /*------ Create HTML ------*/
 
 nav.innerHTML = `
-<div class="logo"> </div>
+  <div class="closeMobile">
+      <i class="fa-solid fa-xmark"></i>
+  </div>
 
-<ul>
-<li> <a href='/index.html'> Accueil </a> </li>
-<li> <a href='/index.html#skills'> Compétences </a> </li>
-<li> <a href="/index.html#folio"> Folio </a></li>
-<li> <a href="mailto:rolland.h.dev@gmail.com"> Contact </a></li>
-</ul>
+  <div class="logo"> </div>
+
+  <ul>
+    <li> <a href='/index.html'> Accueil </a> </li>
+    <li> <a href='/index.html#skills'> Compétences </a> </li>
+    <li> <a href="/index.html#folio"> Folio </a></li>
+    <li> <a href="mailto:rolland.h.dev@gmail.com"> Contact </a></li>
+  </ul>
 `;
 
 footer.innerHTML = `
@@ -34,6 +46,34 @@ footer.innerHTML = `
 </div>
 
 `;
+
+/*--------- EventListener Nav Mobile -----------*/
+
+openMenu.addEventListener("click", () => {
+  nav.style.transform = "translateX(0)";
+  openMenu.style.transform = "translateX(-150px)";
+});
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    openMenu.style.color = "white ";
+  } else {
+    openMenu.style.color = "black";
+  }
+});
+
+menuClose.addEventListener("click", () => {
+  console.log("coucou");
+  // nav.style.transform = "translateX(-65vw)";
+  // openMenu.style.transform = "translateX(0)";
+});
+
+link.forEach((links) => {
+  links.addEventListener("click", () => {
+    nav.style.transform = "translateX(-65vw)";
+    openMenu.style.transform = "translateX(0)";
+  });
+});
 
 /*------ EventListener Carousel ------*/
 

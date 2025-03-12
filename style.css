@@ -82,8 +82,8 @@ body .menuMobile {
   position: absolute;
   top: 20px;
   left: 20px;
-  width: 32px;
-  height: 28px;
+  width: 35px;
+  height: 35px;
   z-index: 40;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
@@ -94,6 +94,7 @@ body .menuMobile {
     position: fixed;
     top: 20px;
     left: 20px;
+    overflow-x: hidden;
   }
 }
 @media (max-width: 440px) {
@@ -102,6 +103,7 @@ body .menuMobile {
     position: fixed;
     top: 20px;
     left: 20px;
+    overflow-x: hidden;
   }
 }
 body .menuMobile i {
@@ -290,6 +292,7 @@ header .up h2 {
 @media (max-width: 950px) {
   header .up h2 {
     color: #5c1d3d;
+    font-size: 1.4rem;
   }
 }
 header .mid {
@@ -297,11 +300,21 @@ header .mid {
   font-size: 1.5rem;
   margin-bottom: 30px;
 }
+@media (max-width: 950px) {
+  header .mid {
+    margin-bottom: 5px;
+  }
+}
 header .mid h1 {
   font-family: "Roboto", sans-serif;
   font-size: 3.3rem;
   letter-spacing: 2px;
   font-weight: 900;
+}
+@media (max-width: 950px) {
+  header .mid h1 {
+    font-size: 2.5rem;
+  }
 }
 header .down {
   width: 100%;
@@ -313,15 +326,26 @@ header .down {
   margin-bottom: 40px;
   color: #d4b3a5;
 }
+@media (max-width: 950px) {
+  header .down {
+    text-align: center;
+  }
+}
+@media (max-width: 440px) {
+  header .down {
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+  }
+}
 header .down h2 {
   font-family: "Poiret One", sans-serif;
   font-weight: 700;
   font-size: 2rem;
   letter-spacing: 2px;
 }
-@media (max-width: 650px) {
+@media (max-width: 440px) {
   header .down h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
   }
 }
@@ -528,6 +552,11 @@ header .scrollIcon i {
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
+}
+@media (max-width: 650px) {
+  #folio .folioContain .folioList #secondContainer {
+    flex-direction: column-reverse;
+  }
 }
 #folio .folioContain .folioList .listCardContainer {
   width: 90%;
@@ -775,6 +804,11 @@ header .scrollIcon i {
   background: rgb(255, 255, 255);
   background: linear-gradient(171deg, rgb(255, 255, 255) 0%, rgb(87, 22, 55) 37%, rgb(0, 0, 0) 70%);
 }
+@media (max-width: 950px) {
+  .folioBook {
+    height: auto;
+  }
+}
 .folioBook::before {
   content: "";
   position: absolute;
@@ -802,6 +836,12 @@ header .scrollIcon i {
   letter-spacing: 2px;
   font-family: "Poiret One", sans-serif;
 }
+@media (max-width: 950px) {
+  .folioBook .folioHeader h2 {
+    text-align: center;
+    margin: 100px auto;
+  }
+}
 .folioBook .folioHeader h2::after {
   content: "";
   position: absolute;
@@ -821,6 +861,12 @@ header .scrollIcon i {
   width: 100%;
   height: 550px;
 }
+@media (max-width: 950px) {
+  .folioBook .folioHeader .folio1Container {
+    flex-direction: column;
+    height: auto;
+  }
+}
 .folioBook .folioHeader .folio1Container .folio1Carousel {
   position: relative;
   max-width: 900px;
@@ -828,6 +874,13 @@ header .scrollIcon i {
   width: 50%;
   height: 550px;
   max-height: 550px;
+}
+@media (max-width: 950px) {
+  .folioBook .folioHeader .folio1Container .folio1Carousel {
+    width: 95%;
+    height: 550px;
+    margin-bottom: 60px;
+  }
 }
 .folioBook .folioHeader .folio1Container .folio1Carousel .btn {
   position: absolute;
@@ -896,9 +949,33 @@ header .scrollIcon i {
   justify-content: center;
   align-items: start;
 }
+@media (max-width: 950px) {
+  .folioBook .folioHeader .folio1Container .folio1Desc {
+    width: 95%;
+    height: auto;
+    margin: 20px auto;
+  }
+}
 .folioBook .folioHeader .folio1Container .folio1Desc p {
   margin: 0 0 20px 10px;
   color: #d4b3a5;
   line-height: 25px;
   letter-spacing: 1px;
+}
+
+.closeMobile {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 40;
+  cursor: pointer;
+}
+@media (max-width: 650px) {
+  .closeMobile {
+    display: block;
+  }
+}
+.closeMobile i {
+  font-size: 2rem;
 }/*# sourceMappingURL=style.css.map */
