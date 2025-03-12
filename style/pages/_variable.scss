@@ -1,0 +1,100 @@
+/*------------ Color -------------*/
+
+$color1: #5c1d3d;
+$color2: #1c1917;
+$color3: #d4b3a5;
+
+/*------------ Responsive -------------*/
+
+@mixin tablet {
+  @media (max-width: 950px) {
+    @content;
+  }
+}
+
+@mixin middle {
+  @media (max-width: 650px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 440px) {
+    @content;
+  }
+}
+
+/*------------ KeyFrame ---------*/
+
+@keyframes onLoadNav {
+  0% {
+    top: -120px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 100%;
+  }
+}
+
+@keyframes onLoadBefor {
+  0% {
+    opacity: 1;
+    height: 100vh;
+  }
+
+  100% {
+    opacity: 0;
+    height: 0;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+}
+
+@keyframes onLoadTranslate {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 100%;
+  }
+}
+
+@keyframes afterNav {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scrollAnim {
+  0% {
+    transform: translateY(-25px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-25px);
+  }
+}

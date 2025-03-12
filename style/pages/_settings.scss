@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  background: black;
+  height: auto;
+  overflow-x: hidden;
+  & .menuMobile {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 32px;
+    height: 28px;
+    z-index: 40;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    @include middle {
+      display: block;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+    }
+    @include mobile {
+      display: block;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+    }
+
+    & i {
+      font-size: 2rem;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  &:visited {
+    color: none;
+  }
+}

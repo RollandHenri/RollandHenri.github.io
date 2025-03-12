@@ -1,0 +1,141 @@
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100%;
+  color: $color3;
+  transition: 0.5s;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    171deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(87, 22, 55, 1) 37%,
+    rgba(0, 0, 0, 1) 70%
+  );
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: $color3;
+    animation: onLoadBefor 1s ease-in-out forwards;
+  }
+  & .headerHero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    @include tablet {
+      flex-direction: column;
+    }
+    & .headerHeroLeft {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 500px;
+      & .center,
+      .down,
+      .logoLink {
+        opacity: 0;
+        animation: fadeIn 1s ease forwards 1s;
+      }
+    }
+  }
+  & .up {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 1.3rem;
+    & h2 {
+      font-family: "Poiret One", sans-serif;
+      font-weight: 700;
+      font-size: 2.3rem;
+      letter-spacing: 2px;
+      @include tablet {
+        color: $color1;
+      }
+    }
+  }
+  & .mid {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    & h1 {
+      font-family: "Roboto", sans-serif;
+      font-size: 3.3rem;
+      letter-spacing: 2px;
+      font-weight: 900;
+    }
+  }
+  & .down {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: $color3;
+    & h2 {
+      font-family: "Poiret One", sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      letter-spacing: 2px;
+      @include middle {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+    }
+  }
+
+  & .logoLink {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    & img {
+      transition: all 0.4s ease;
+    }
+    & img:hover {
+      scale: 1.1;
+      transition: all 0.4s ease;
+    }
+  }
+
+  & .aboutImg {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: white;
+    opacity: 0;
+    transform: translateX(200px);
+    animation: onLoadTranslate 0.8s ease forwards 1.3s;
+    transition: 1.2s ease-in-out;
+  }
+
+  & .scrollIcon {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & i {
+      font-size: 2.3rem;
+      animation: scrollAnim 1.5s ease-in-out infinite;
+    }
+  }
+}
