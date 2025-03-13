@@ -30,7 +30,7 @@ nav.innerHTML = `
 footer.innerHTML = `
 <div class='footerList'> 
   <ul>
-    <li><h3>Réseau</h3></li>
+    <li><h3>Réseaux</h3></li>
     <li><a href='https://github.com/RollandHenri'> <i class="fa-brands fa-github"></i> GitHub </a></li>
     <li><a href='https://x.com/Rolland_Dev'><i class="fa-brands fa-twitter"></i> Twitter </a> </li>
     <li><a href='https://www.instagram.com/riton_dev/'><i class="fa-brands fa-instagram"> </i> Instagram</a> </li>
