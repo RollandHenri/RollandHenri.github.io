@@ -40,6 +40,9 @@ header {
       justify-content: space-around;
       align-items: center;
       height: 500px;
+      @include mobile {
+        height: 300px;
+      }
       & .center,
       .down,
       .logoLink {
@@ -136,6 +139,7 @@ header {
     animation: onLoadTranslate 0.8s ease forwards 1.3s;
     transition: 1.2s ease-in-out;
     @include mobile {
+      margin-bottom: 60px;
       transform: translateX(0);
       animation: fadeIn 1s ease forwards 1.3s;
     }

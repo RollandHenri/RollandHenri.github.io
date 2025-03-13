@@ -286,6 +286,11 @@ header .headerHero .headerHeroLeft {
   align-items: center;
   height: 500px;
 }
+@media (max-width: 440px) {
+  header .headerHero .headerHeroLeft {
+    height: 300px;
+  }
+}
 header .headerHero .headerHeroLeft .center,
 header .headerHero .headerHeroLeft .down,
 header .headerHero .headerHeroLeft .logoLink {
@@ -392,6 +397,7 @@ header .aboutImg {
 }
 @media (max-width: 440px) {
   header .aboutImg {
+    margin-bottom: 60px;
     transform: translateX(0);
     animation: fadeIn 1s ease forwards 1.3s;
   }
