@@ -984,7 +984,8 @@ header .scrollIcon i {
   width: 40%;
   min-width: 550px;
   height: 550px;
-  border: 1px solid white;
+  border: 1px solid #5c1d3d;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1007,11 +1008,6 @@ header .scrollIcon i {
     align-items: center;
     margin: 0 auto;
     text-align: justify;
-  }
-}
-@media (max-width: 440px) {
-  .folioBook .folioHeader .folio1Container .folio1Desc {
-    background-color: red;
   }
 }
 .folioBook .folioHeader .folio1Container .folio1Desc p {

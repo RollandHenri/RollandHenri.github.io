@@ -144,7 +144,8 @@
         width: 40%;
         min-width: 550px;
         height: 550px;
-        border: 1px solid white;
+        border: 1px solid $color1;
+        border-radius: 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -165,7 +166,6 @@
           text-align: justify;
         }
         @include mobile {
-          background-color: red;
         }
         & p {
           margin: 0 0 20px 10px;
