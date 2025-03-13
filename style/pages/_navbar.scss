@@ -45,7 +45,10 @@ nav {
     height: 60px;
     background: url("/assets/icon/logo.webp") center / cover;
     @include middle {
-      margin-top: 50px;
+      width: 100px;
+      height: 60px;
+      margin-top: 30px;
+      padding-top: 50px;
     }
   }
   & ul {
