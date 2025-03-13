@@ -135,6 +135,10 @@ header {
     transform: translateX(200px);
     animation: onLoadTranslate 0.8s ease forwards 1.3s;
     transition: 1.2s ease-in-out;
+    @include mobile {
+      transform: translateX(0);
+      animation: fadeIn 1s ease forwards 1.3s;
+    }
   }
 
   & .scrollIcon {

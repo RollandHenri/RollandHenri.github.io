@@ -120,6 +120,8 @@ const observeCard = new IntersectionObserver(
         entry.target.style.transitionDelay = "0.3s";
         entry.target.style.transform = "translateX(0px)";
         entry.target.style.opacity = "1";
+      } else if (window.matchMedia("(max-width: 770px)").matches) {
+        entry.target.transitionDelay = "0";
       }
     }
   },
