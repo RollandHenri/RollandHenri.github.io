@@ -66,6 +66,7 @@
         margin: 20px 0;
         min-width: 350px;
       }
+
       & h3 {
         margin: 20px auto 50px auto;
         color: $color3;
@@ -83,6 +84,9 @@
         text-align: start;
         @include middle {
           padding: 20px 20px;
+        }
+        @include mobile {
+          text-align: center;
         }
       }
     }

@@ -56,7 +56,7 @@ skills.innerHTML = `
         </div> 
         <div class="skillsPara">
            <p>
-              Je développe des site internet et des applications web.
+              Je développe des sites internet et des applications web.
               Je travail avec plusieurs Frameworks pour apporter des solutions particuliers à vos attentes.
           </p>
         </div>

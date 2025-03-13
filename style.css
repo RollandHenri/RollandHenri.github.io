@@ -521,6 +521,13 @@ header .scrollIcon i {
     padding: 20px 20px;
   }
 }
+@media (max-width: 440px) {
+  #skills .skillsContain .skillsLeft .skillsPara,
+  #skills .skillsContain .skillsMid .skillsPara,
+  #skills .skillsContain .skillsRight .skillsPara {
+    text-align: center;
+  }
+}
 #skills .skillsContain .iconLeft,
 #skills .skillsContain .iconRight {
   display: flex;
