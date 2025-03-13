@@ -12,8 +12,7 @@ console.log(sildes);
 
 const openMenu = document.querySelector(".menuMobile");
 const menu = document.querySelector(".nav");
-const menuClose = document.querySelector(".closeMobile");
-console.log(menuClose);
+
 const link = document.querySelectorAll("nav a");
 
 /*------ Create HTML ------*/
@@ -48,6 +47,9 @@ footer.innerHTML = `
 `;
 
 /*--------- EventListener Nav Mobile -----------*/
+
+const menuClose = document.querySelector(".closeMobile");
+console.log(menuClose);
 
 openMenu.addEventListener("click", () => {
   nav.style.transform = "translateX(0)";
