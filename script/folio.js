@@ -13,8 +13,8 @@ console.log(sildes);
 const openMenu = document.querySelector(".menuMobile");
 const menu = document.querySelector(".nav");
 const menuClose = document.querySelector(".closeMobile");
-const link = document.querySelectorAll("nav a");
 console.log(menuClose);
+const link = document.querySelectorAll("nav a");
 
 /*------ Create HTML ------*/
 
@@ -63,9 +63,8 @@ window.addEventListener("scroll", () => {
 });
 
 menuClose.addEventListener("click", () => {
-  console.log("coucou");
-  // nav.style.transform = "translateX(-65vw)";
-  // openMenu.style.transform = "translateX(0)";
+  nav.style.transform = "translateX(-65vw)";
+  openMenu.style.transform = "translateX(0)";
 });
 
 link.forEach((links) => {

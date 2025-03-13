@@ -674,15 +674,30 @@ header .scrollIcon i {
   transform: translateX(-100px);
   opacity: 0;
 }
+@media (max-width: 440px) {
+  #folio .folioContain .folioList .listCardContainer .card1 {
+    transform: translateX(0);
+  }
+}
 #folio .folioContain .folioList .listCardContainer .card2 {
   background: url("/assets/img/La_montagne.webp") center/cover;
   transform: translateX(100px);
   opacity: 0;
 }
+@media (max-width: 440px) {
+  #folio .folioContain .folioList .listCardContainer .card2 {
+    transform: translateX(0);
+  }
+}
 #folio .folioContain .folioList .listCardContainer .card3 {
   background: url("/assets/img/Run.webp") center/cover;
   transform: translateX(-100px);
   opacity: 0;
+}
+@media (max-width: 440px) {
+  #folio .folioContain .folioList .listCardContainer .card3 {
+    transform: translateX(0);
+  }
 }
 
 #footer {

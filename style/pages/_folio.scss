@@ -159,16 +159,25 @@
           background: url("/assets/img/Le_Resto.webp") center / cover;
           transform: translateX(-100px);
           opacity: 0;
+          @include mobile {
+            transform: translateX(0);
+          }
         }
         & .card2 {
           background: url("/assets/img/La_montagne.webp") center / cover;
           transform: translateX(100px);
           opacity: 0;
+          @include mobile {
+            transform: translateX(0);
+          }
         }
         & .card3 {
           background: url("/assets/img/Run.webp") center / cover;
           transform: translateX(-100px);
           opacity: 0;
+          @include mobile {
+            transform: translateX(0);
+          }
         }
       }
     }
