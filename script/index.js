@@ -151,9 +151,9 @@ footer.innerHTML = `
 <div class='footerList'> 
   <ul>
     <li><h3>Réseau</h3></li>
-    <li><a href='github.com'> <i class="fa-brands fa-github"></i> GitHub </a></li>
-    <li><a href='twiter.com'><i class="fa-brands fa-twitter"></i> Twitter </a> </li>
-    <li><a href='instagram.comm'><i class="fa-brands fa-instagram"> </i> Instagram</a> </li>
+    <li><a href='https://github.com/RollandHenri'> <i class="fa-brands fa-github"></i> GitHub </a></li>
+    <li><a href='https://x.com/Rolland_Dev'><i class="fa-brands fa-twitter"></i> Twitter </a> </li>
+    <li><a href='https://www.instagram.com/riton_dev/'><i class="fa-brands fa-instagram"> </i> Instagram</a> </li>
   </ul>
   <h3> Site créé From Scratch par Rolland-Dev / 2024 </h3>
   

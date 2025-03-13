@@ -3,11 +3,6 @@ const footer = document.getElementById("footer");
 
 /*------ Variable Carousel ------*/
 
-const btns = document.querySelectorAll(".btn");
-const sildes = document.querySelectorAll(".slide");
-
-console.log(sildes);
-
 /*--------- Variable Nav Mobile -----------*/
 
 const openMenu = document.querySelector(".menuMobile");
@@ -36,9 +31,9 @@ footer.innerHTML = `
 <div class='footerList'> 
   <ul>
     <li><h3>Réseau</h3></li>
-    <li><a href='github.com'> <i class="fa-brands fa-github"></i> GitHub </a></li>
-    <li><a href='twiter.com'><i class="fa-brands fa-twitter"></i> Twitter </a> </li>
-    <li><a href='instagram.comm'><i class="fa-brands fa-instagram"> </i> Instag</a> </li>
+    <li><a href='https://github.com/RollandHenri'> <i class="fa-brands fa-github"></i> GitHub </a></li>
+    <li><a href='https://x.com/Rolland_Dev'><i class="fa-brands fa-twitter"></i> Twitter </a> </li>
+    <li><a href='https://www.instagram.com/riton_dev/'><i class="fa-brands fa-instagram"> </i> Instagram</a> </li>
   </ul>
   <h3> Site créé From Scratch par Rolland-Dev / 2024 </h3>
   
@@ -78,16 +73,20 @@ link.forEach((links) => {
 
 /*------ EventListener Carousel ------*/
 
+const btns = document.querySelectorAll(".btn");
+const sildes = document.querySelectorAll(".slide");
+
 btns.forEach((btn) => {
   btn.addEventListener("click", (e) => {
     const calcNextSlide = e.target.id === "next" ? 1 : -1;
     const slideActive = document.querySelector(".active");
+
     newIndex = calcNextSlide + [...sildes].indexOf(slideActive);
 
     if (newIndex < 0) newIndex = [...sildes].length - 1;
     if (newIndex >= [...sildes].length) newIndex = 0;
-
     sildes[newIndex].classList.add("active");
+
     slideActive.classList.remove("active");
   });
 });
