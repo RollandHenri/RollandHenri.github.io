@@ -12,6 +12,12 @@ body {
   background: black;
   height: auto;
   overflow-x: hidden;
+@include middle {
+overflow-x: hidden;
+}
+@include mobile {
+ overflow-x: hidden;
+}
   & .menuMobile {
     display: none;
     position: absolute;
