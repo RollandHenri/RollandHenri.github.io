@@ -44,8 +44,10 @@ menuClose.addEventListener("click", () => {
 
 link.forEach((links) => {
   links.addEventListener("click", () => {
-    nav.style.transform = "translateX(-65vw)";
-    openMenu.style.transform = "translateX(0)";
+    if (window.matchMedia("(max-width: 650px)").matches) {
+      nav.style.transform = "translateX(-65vw)";
+      openMenu.style.transform = "translateX(0)";
+    }
   });
 });
 
