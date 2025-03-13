@@ -5,6 +5,12 @@
   list-style: none;
   font-family: sans-serif;
   scroll-behavior: smooth;
+@include middle {
+overflow-x: hidden ;
+}
+@include mobile {
+overflow-x: hidden;
+}
 }
 
 body {
