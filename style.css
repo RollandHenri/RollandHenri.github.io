@@ -605,6 +605,10 @@ header .scrollIcon i {
   margin: 50px auto;
   background: transparent;
 }
+#folio .folioContain .folioList .listCardContainer .second {
+  background: rgb(0, 0, 0) !important;
+  background: linear-gradient(270deg, rgb(0, 0, 0) 2%, rgb(87, 22, 55) 70%) !important;
+}
 @media (max-width: 650px) {
   #folio .folioContain .folioList .listCardContainer {
     flex-direction: column;
@@ -642,10 +646,6 @@ header .scrollIcon i {
   #folio .folioContain .folioList .listCardContainer .effect {
     width: 90%;
   }
-}
-#folio .folioContain .folioList .listCardContainer .effect .second {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(270deg, rgb(0, 0, 0) 2%, rgb(87, 22, 55) 70%);
 }
 #folio .folioContain .folioList .listCardContainer .effect h3 {
   padding: 15px;

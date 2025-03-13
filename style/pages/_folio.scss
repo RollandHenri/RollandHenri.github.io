@@ -50,6 +50,14 @@
         align-items: center;
         margin: 50px auto;
         background: transparent;
+        & .second {
+          background: rgb(0, 0, 0) !important;
+          background: linear-gradient(
+            270deg,
+            rgba(0, 0, 0, 1) 2%,
+            rgba(87, 22, 55, 1) 70%
+          ) !important;
+        }
         @include middle {
           flex-direction: column;
         }
@@ -83,17 +91,11 @@
           );
           opacity: 0;
           transition: all 0.5s ease-in-out;
+
           @include mobile {
             width: 90%;
           }
-          & .second {
-            background: rgb(0, 0, 0);
-            background: linear-gradient(
-              270deg,
-              rgba(0, 0, 0, 1) 2%,
-              rgba(87, 22, 55, 1) 70%
-            );
-          }
+
           & h3 {
             padding: 15px;
             color: $color3;
