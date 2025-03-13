@@ -5,6 +5,12 @@
   list-style: none;
   font-family: sans-serif;
   scroll-behavior: smooth;
+@include middle {
+overflow-x: hidden ;
+}
+@include mobile {
+overflow-x: hidden;
+}
 }
 
 body {
@@ -12,6 +18,12 @@ body {
   background: black;
   height: auto;
   overflow-x: hidden;
+@include middle {
+overflow-x: hidden;
+}
+@include mobile {
+ overflow-x: hidden;
+}
   & .menuMobile {
     display: none;
     position: absolute;
