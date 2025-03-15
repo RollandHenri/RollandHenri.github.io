@@ -37,8 +37,9 @@ nav {
     @include middle {
       display: block;
     }
-    & i {
-      font-size: 2rem;
+    & img {
+      width: 25px;
+      height: 25px;
     }
   }
   & .logo {
@@ -75,7 +76,8 @@ nav {
         margin: 40px 0;
         font-size: 1.5rem;
       }
-      & a {
+      & a,
+      .captcha {
         color: black;
         &:hover {
           scale: 1.1;

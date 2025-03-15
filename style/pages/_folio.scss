@@ -57,6 +57,13 @@
             rgba(0, 0, 0, 1) 2%,
             rgba(87, 22, 55, 1) 70%
           ) !important;
+          @include middle {
+            background: linear-gradient(
+              180deg,
+              rgba(0, 0, 0, 1) 2%,
+              rgba(87, 22, 55, 1) 70%
+            ) !important;
+          }
         }
         @include middle {
           flex-direction: column;
@@ -91,9 +98,21 @@
           );
           opacity: 0;
           transition: all 0.5s ease-in-out;
-
+          @include tablet {
+            width: 90%;
+            background: linear-gradient(
+              180deg,
+              rgba(0, 0, 0, 1) 2%,
+              rgba(87, 22, 55, 1) 70%
+            );
+          }
           @include mobile {
             width: 90%;
+            background: linear-gradient(
+              180deg,
+              rgba(0, 0, 0, 1) 2%,
+              rgba(87, 22, 55, 1) 70%
+            );
           }
 
           & h3 {
