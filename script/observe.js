@@ -20,7 +20,6 @@ const menu = document.querySelector(".nav");
 const menuClose = document.querySelector(".closeMobile");
 const link = document.querySelectorAll("nav a");
 const menuMobile = document.querySelector(".menuMobile");
-console.log(menuMobile);
 
 /*---------- Captcha ------------*/
 

@@ -23,7 +23,7 @@ nav.innerHTML = `
     <li> <a href='/index.html'> Accueil </a> </li>
     <li> <a href='/index.html#skills'> Compétences </a> </li>
     <li> <a href="/index.html#folio"> Folio </a></li>
-   <li class="captcha"> <a> Contact </a> </li>
+   <li class="captcha"> <span> Contact </span> </li>
   </ul>
 `;
 

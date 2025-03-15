@@ -30,7 +30,7 @@ nav.innerHTML = `
     <li> <a href='#'> Accueil </a> </li>
     <li> <a href='#skills'> Compétences </a> </li>
     <li> <a href="#folio"> Folio </a></li>
-    <li class="captcha"> <a> Contact </a> </li>
+    <li class="captcha"> <span> Contact </span> </li>
   </ul>
 `;
 
