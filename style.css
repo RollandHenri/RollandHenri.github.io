@@ -439,6 +439,11 @@ header .scrollIcon i {
   width: 100%;
   transition: 0.8s ease-in-out;
 }
+@media (max-width: 440px) {
+  #skills {
+    margin: 0 auto 100px auto;
+  }
+}
 #skills h2 {
   position: relative;
   font-family: "Poiret One", sans-serif;
@@ -459,6 +464,11 @@ header .scrollIcon i {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+@media (max-width: 440px) {
+  #skills h2 {
+    margin: 20px 0;
+  }
 }
 #skills .skillsContain {
   display: flex;
@@ -498,6 +508,15 @@ header .scrollIcon i {
   #skills .skillsContain .skillsRight {
     margin: 20px 0;
     min-width: 350px;
+  }
+}
+@media (max-width: 440px) {
+  #skills .skillsContain .skillsLeft,
+  #skills .skillsContain .skillsMid,
+  #skills .skillsContain .skillsRight {
+    width: 85%;
+    min-width: 80%;
+    margin: 20px 0;
   }
 }
 #skills .skillsContain .skillsLeft h3,
@@ -614,6 +633,12 @@ header .scrollIcon i {
   align-items: center;
   margin: 50px auto;
   background: transparent;
+}
+@media (max-width: 440px) {
+  #folio .folioContain .folioList .listCardContainer {
+    width: 90%;
+    margin: 30px 0;
+  }
 }
 #folio .folioContain .folioList .listCardContainer .second {
   background: rgb(0, 0, 0) !important;
@@ -849,13 +874,13 @@ header .scrollIcon i {
 }
 @media (max-width: 950px) {
   #footer .footerList ul li {
-    width: 100%;
+    width: 90%;
     margin-right: 40px;
   }
 }
 @media (max-width: 440px) {
   #footer .footerList ul li {
-    width: 100%;
+    width: 90%;
     margin-bottom: 20px;
   }
 }

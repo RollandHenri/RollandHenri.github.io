@@ -71,11 +71,11 @@
         align-items: center;
         margin: 0 auto;
         @include tablet {
-          width: 100%;
+          width: 90%;
           margin-right: 40px;
         }
         @include mobile {
-          width: 100%;
+          width: 90%;
           margin-bottom: 20px;
         }
         & a {

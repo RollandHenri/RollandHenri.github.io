@@ -50,6 +50,10 @@
         align-items: center;
         margin: 50px auto;
         background: transparent;
+        @include mobile {
+          width: 90%;
+          margin: 30px 0;
+        }
         & .second {
           background: rgb(0, 0, 0) !important;
           background: linear-gradient(
