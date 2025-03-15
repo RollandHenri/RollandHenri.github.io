@@ -23,7 +23,7 @@ nav.innerHTML = `
     <li> <a href='/index.html'> Accueil </a> </li>
     <li> <a href='/index.html#skills'> Compétences </a> </li>
     <li> <a href="/index.html#folio"> Folio </a></li>
-    <li> <a href="mailto:rolland.h.dev@gmail.com"> Contact </a></li>
+   <li class="captcha"> <a> Contact </a> </li>
   </ul>
 `;
 
@@ -75,6 +75,28 @@ link.forEach((links) => {
     openMenu.style.transform = "translateX(0)";
   });
 });
+
+/*----------- Captcha ----------*/
+
+document.querySelector(".captcha").addEventListener("click", (e) => {
+  answer();
+});
+
+function answer() {
+  let firstNumber = Math.floor(Math.random() * 10);
+  let secondNumber = Math.ceil(Math.random() * 10);
+  let somme = firstNumber + secondNumber;
+  console.log(somme);
+  let response = prompt(`${firstNumber} + ${secondNumber}`);
+  console.log(response);
+  if (response == somme) {
+    window.location.href = "mailto:rolland.h.dev@gmail.com";
+    return;
+  } else {
+    alert("Ce n'est pas la bonne réponse");
+    return;
+  }
+}
 
 /*------ EventListener Carousel ------*/
 
