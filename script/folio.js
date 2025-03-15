@@ -44,7 +44,7 @@ footer.innerHTML = `
 /*--------- EventListener Nav Mobile -----------*/
 
 const menuClose = document.querySelector(".closeMobile");
-const menuMobile = document.querySelector(".menuMobile img");
+const menuMobile = document.querySelector(".menuMobile");
 console.log(menuMobile);
 
 openMenu.addEventListener("click", () => {
@@ -54,9 +54,13 @@ openMenu.addEventListener("click", () => {
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 300) {
-    openMenu.style.color = "white ";
+    menuMobile.innerHTML = `
+    <img src='/assets/icon/menu-white.webp' alt="logo menu">
+    `;
   } else {
-    openMenu.style.color = "black";
+    menuMobile.innerHTML = `
+    <img src='/assets/icon/menu.webp' alt="logo menu">
+    `;
   }
 });
 
