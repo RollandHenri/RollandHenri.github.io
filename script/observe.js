@@ -108,6 +108,9 @@ const observeMid = new IntersectionObserver(
         entry.target.style.transform = "translateY(0px)";
         entry.target.style.opacity = "1";
       }
+      if (window.matchMedia("(max-width: 450px)")) {
+        entry.target.style.transitionDelay = "0s";
+      }
     }
   },
   {
@@ -126,8 +129,9 @@ const observeRight = new IntersectionObserver(
         entry.target.style.transitionDelay = "0.9s";
         entry.target.style.transform = "translateY(0px)";
         entry.target.style.opacity = "1";
-      } else if (window.matchMedia("(max-width: 768px)").matches) {
-        entry.target.style.transitionDelay = "0.6s";
+      }
+      if (window.matchMedia("(max-width: 800px)").matches) {
+        entry.target.style.transitionDelay = "0s";
       }
     }
   },
@@ -139,6 +143,7 @@ const observeRight = new IntersectionObserver(
 observeRight.observe(skillsRight);
 
 /*---------- Observe Folio -----------*/
+
 //**** Observe Card */
 
 const observeCard = new IntersectionObserver(
