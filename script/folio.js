@@ -14,7 +14,7 @@ const link = document.querySelectorAll("nav a");
 
 nav.innerHTML = `
   <div class="closeMobile">
-      <i class="fa-solid fa-xmark"></i>
+      <img src='/assets/icon/fermer.webp' alt="logo fermer">
   </div>
 
   <div class="logo"> </div>
@@ -44,7 +44,8 @@ footer.innerHTML = `
 /*--------- EventListener Nav Mobile -----------*/
 
 const menuClose = document.querySelector(".closeMobile");
-console.log(menuClose);
+const menuMobile = document.querySelector(".menuMobile img");
+console.log(menuMobile);
 
 openMenu.addEventListener("click", () => {
   nav.style.transform = "translateX(0)";
