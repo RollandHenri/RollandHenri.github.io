@@ -991,7 +991,7 @@ body {
 }
 @media (max-width: 440px) {
   .folioBook .folioHeader .folio1Container {
-    width: 100%;
+    width: 90%;
   }
 }
 .folioBook .folioHeader .folio1Container .folio1Carousel {
