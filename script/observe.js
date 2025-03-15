@@ -20,7 +20,6 @@ const menu = document.querySelector(".nav");
 const menuClose = document.querySelector(".closeMobile");
 
 const link = document.querySelectorAll("nav a");
-console.log(link);
 
 /*--------- EventListener Nav Mobile -----------*/
 
@@ -161,7 +160,6 @@ description.forEach((enter) => {
 const scrollIcon = document.querySelector(".scrollIcon");
 
 window.addEventListener("scroll", () => {
-  console.log(window.scrollY);
   if (window.scrollY > 300) {
     scrollIcon.style.opacity = "0";
     scrollIcon.style.transition = "0.7s ease-in-out";
