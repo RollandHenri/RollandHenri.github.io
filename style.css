@@ -391,10 +391,10 @@ header .logoLink img:hover {
   transition: all 0.4s ease;
 }
 header .aboutImg {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
-  background: white;
+  background: url("/assets/img/profilCard.webp") center/cover;
   opacity: 0;
   transform: translateX(200px);
   animation: onLoadTranslate 0.8s ease forwards 1.3s;
