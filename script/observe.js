@@ -107,7 +107,7 @@ const observeMid = new IntersectionObserver(
         entry.target.style.transform = "translateY(0px)";
         entry.target.style.opacity = "1";
       }
-      if (window.matchMedia("(max-width: 450px)")) {
+      if (window.matchMedia("(max-width: 450px)").matches) {
         entry.target.style.transitionDelay = "0s";
       }
     }
