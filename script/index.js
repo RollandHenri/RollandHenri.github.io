@@ -57,7 +57,7 @@ skills.innerHTML = `
         <div class="skillsPara">
            <p>
               Je développe des sites internet et des applications web.
-              Je travail avec plusieurs Frameworks pour apporter des solutions particuliers à vos attentes.
+              Je travaille avec plusieurs Frameworks pour apporter des solutions particulières à vos attentes.
           </p>
         </div>
 </div> 
@@ -97,7 +97,7 @@ skills.innerHTML = `
     </div>
       <div class="skillsPara">
            <p>
-              Je travail avec des outils pour retoucher et optimiser vos site (création de maquette, retouche de photos, ...)
+              Je travail avec des outils pour retoucher et optimiser vos sites (création de maquette, retouche de photos, ...)
           </p>
       </div>
   </div> 
@@ -124,7 +124,7 @@ folio.innerHTML = `
     <div class='effect second'>
       <h3> La Montagne </h3>
         <p> Un site développé uniquement en HTML et CSS (SASS) </p> 
-        <p> Site vitrine avec des articles de Randonées</p>
+        <p> Site vitrine avec des articles de Randonée</p>
         <p> Utilisation de SASS pour optimiser le CSS</p>
         <p> Utilisation de JavaScript pour les animations</p>
           <a href="/pages/folio2.html"><button> <span> En savoir plus </span><i class="fa-solid fa-circle-chevron-right"></i> </button> </a> 
@@ -137,7 +137,7 @@ folio.innerHTML = `
     <div class='effect'>
       <h3> Run </h3>
       <p> Un site développé en HTML / SASS / JavaScript </p> 
-      <p> Site vitrine pour de la course à pieds </p>
+      <p> Site vitrine pour de la course à pied </p>
       <p> Mise en place d'un formulaire de contact</p>
       <p> Utilisation de SASS pour optimiser le CSS</p>
       <a href="/pages/folio3.html"> <button> <span> En savoir plus </span> <i class="fa-solid fa-circle-chevron-right"></i></button> </a> 
