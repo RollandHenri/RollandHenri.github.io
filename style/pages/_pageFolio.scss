@@ -4,7 +4,7 @@ body {
 
 .folioBook {
   position: relative;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   background: rgb(255, 255, 255);
@@ -154,8 +154,6 @@ body {
         min-width: 550px;
         min-height: 30%;
         max-height: 80%;
-        border: 1px solid $color1;
-        border-radius: 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
