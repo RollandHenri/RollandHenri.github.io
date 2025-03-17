@@ -1,3 +1,14 @@
+/*----------- Font ----------*/
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/font/Roboto-VariableFont_wdth\,wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poiret One";
+  src: url("/assets/font/PoiretOne-Regular.ttf") format("truetype");
+}
 /*------------ Color -------------*/
 
 $color1: #5c1d3d;

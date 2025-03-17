@@ -1,3 +1,12 @@
+/*----------- Font ----------*/
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/font/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poiret One";
+  src: url("/assets/font/PoiretOne-Regular.ttf") format("truetype");
+}
 /*------------ Color -------------*/
 /*------------ Responsive -------------*/
 /*------------ KeyFrame ---------*/
@@ -225,15 +234,18 @@ nav ul li {
   }
 }
 nav ul li a,
-nav ul li .captcha {
+nav ul li .captcha,
+nav ul li span {
   color: black;
 }
 nav ul li a:hover,
-nav ul li .captcha:hover {
+nav ul li .captcha:hover,
+nav ul li span:hover {
   scale: 1.1;
 }
 nav ul li a:hover:after,
-nav ul li .captcha:hover:after {
+nav ul li .captcha:hover:after,
+nav ul li span:hover:after {
   content: "";
   position: absolute;
   top: -20px;
@@ -350,7 +362,7 @@ header .down {
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 40px;
   color: #d4b3a5;
 }
@@ -368,7 +380,7 @@ header .down {
 header .down h2 {
   font-family: "Poiret One", sans-serif;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.7rem;
   letter-spacing: 2px;
 }
 @media (max-width: 440px) {
@@ -418,12 +430,20 @@ header .scrollIcon {
   justify-content: center;
   align-items: center;
 }
-header .scrollIcon i {
+header .scrollIcon img {
+  width: 50px;
+  height: 50px;
   font-size: 2.3rem;
-  animation: scrollAnim 1.5s ease-in-out infinite;
+  opacity: 0;
+  animation: fadeIn 0.6s ease-in-out forwards 2.5s, scrollAnim 1.5s ease-in-out infinite;
+}
+@media (max-width: 950px) {
+  header .scrollIcon img {
+    display: none;
+  }
 }
 @media (max-width: 440px) {
-  header .scrollIcon i {
+  header .scrollIcon img {
     display: none;
   }
 }
@@ -954,7 +974,7 @@ body {
 .folioBook .folioHeader h2 {
   position: relative;
   margin: 200px 0 100px 150px;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   letter-spacing: 2px;
   font-family: "Poiret One", sans-serif;
 }
@@ -991,7 +1011,7 @@ body {
 }
 @media (max-width: 440px) {
   .folioBook .folioHeader .folio1Container {
-    width: 100%;
+    width: 90%;
   }
 }
 .folioBook .folioHeader .folio1Container .folio1Carousel {

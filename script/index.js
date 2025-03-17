@@ -21,7 +21,7 @@ let scrollDown = 0;
 
 nav.innerHTML = `
   <div class="closeMobile">
-      <img src='/assets/icon/fermer.webp' alt="logo fermer"></i>
+      <img src='/assets/icon/fermer.webp' alt="logo fermer">
   </div>
 
   <div class="logo"> </div>
@@ -30,7 +30,7 @@ nav.innerHTML = `
     <li> <a href='#'> Accueil </a> </li>
     <li> <a href='#skills'> Compétences </a> </li>
     <li> <a href="#folio"> Folio </a></li>
-    <li class="captcha"> <a> Contact </a> </li>
+    <li class="captcha"> <span> Contact </span> </li>
   </ul>
 `;
 

@@ -19,6 +19,7 @@ const openMenu = document.querySelector(".menuMobile");
 const menu = document.querySelector(".nav");
 const menuClose = document.querySelector(".closeMobile");
 const link = document.querySelectorAll("nav a");
+const menuMobile = document.querySelector(".menuMobile");
 
 /*---------- Captcha ------------*/
 
@@ -51,9 +52,13 @@ openMenu.addEventListener("click", () => {
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 300) {
-    openMenu.style.color = "white ";
+    menuMobile.innerHTML = `
+    <img src='/assets/icon/menu-white.webp' alt="logo menu">
+    `;
   } else {
-    openMenu.style.color = "black";
+    menuMobile.innerHTML = `
+    <img src='/assets/icon/menu.webp' alt="logo menu">
+    `;
   }
 });
 
@@ -102,6 +107,9 @@ const observeMid = new IntersectionObserver(
         entry.target.style.transform = "translateY(0px)";
         entry.target.style.opacity = "1";
       }
+      if (window.matchMedia("(max-width: 450px)")) {
+        entry.target.style.transitionDelay = "0s";
+      }
     }
   },
   {
@@ -120,8 +128,9 @@ const observeRight = new IntersectionObserver(
         entry.target.style.transitionDelay = "0.9s";
         entry.target.style.transform = "translateY(0px)";
         entry.target.style.opacity = "1";
-      } else if (window.matchMedia("(max-width: 768px)").matches) {
-        entry.target.style.transitionDelay = "0.6s";
+      }
+      if (window.matchMedia("(max-width: 800px)").matches) {
+        entry.target.style.transitionDelay = "0s";
       }
     }
   },
@@ -133,6 +142,7 @@ const observeRight = new IntersectionObserver(
 observeRight.observe(skillsRight);
 
 /*---------- Observe Folio -----------*/
+
 //**** Observe Card */
 
 const observeCard = new IntersectionObserver(
