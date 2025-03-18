@@ -123,10 +123,10 @@ folio.innerHTML = `
 <div class="listCardContainer" id="secondContainer">
     <div class='effect second'>
       <h3> La Montagne </h3>
-        <p> Un site développé uniquement en HTML et CSS (SASS) </p> 
-        <p> Site vitrine avec des articles de Randonée</p>
+        <p> Un site développé  en HTML / CSS (SASS) / JavaScript</p> 
+        <p> Site vitrine avec des articles de Randonée et formulaire de contact</p>
         <p> Utilisation de SASS pour optimiser le CSS</p>
-        <p> Utilisation de JavaScript pour les animations</p>
+        
           <a href="/pages/folio2.html"><button> <span> En savoir plus </span><i class="fa-solid fa-circle-chevron-right"></i> </button> </a> 
       </div> 
   <div class="listCard card2"> </div>
@@ -136,7 +136,7 @@ folio.innerHTML = `
   <div class="listCard card3"> </div>
     <div class='effect'>
       <h3> Run </h3>
-      <p> Un site développé en HTML / SASS / JavaScript </p> 
+      <p> Un site développé en HTML et CSS (SASS) </p> 
       <p> Site vitrine pour de la course à pied </p>
       <p> Mise en place d'un formulaire de contact</p>
       <p> Utilisation de SASS pour optimiser le CSS</p>
