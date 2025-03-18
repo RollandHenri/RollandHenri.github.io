@@ -31,6 +31,7 @@ nav.innerHTML = `
     <li> <a href='#skills'> Compétences </a> </li>
     <li> <a href="#folio"> Folio </a></li>
     <li class="captcha"> <span> Contact </span> </li>
+    <li class="darkMode"> 
   </ul>
 `;
 
@@ -97,7 +98,7 @@ skills.innerHTML = `
     </div>
       <div class="skillsPara">
            <p>
-              Je travail avec des outils pour retoucher et optimiser vos sites (création de maquette, retouche de photos, ...)
+              Je travaille avec des outils pour retoucher et optimiser vos sites (création de maquette, retouche de photos, ...)
           </p>
       </div>
   </div> 
@@ -150,7 +151,7 @@ folio.innerHTML = `
 footer.innerHTML = `
 <div class='footerList'> 
   <ul>
-    <li><h3>Réseau</h3></li>
+    <li><h3>Réseaux</h3></li>
     <li><a href='https://github.com/RollandHenri'> <i class="fa-brands fa-github"></i> GitHub </a></li>
     <li><a href='https://x.com/Rolland_Dev'><i class="fa-brands fa-twitter"></i> Twitter </a> </li>
     <li><a href='https://www.instagram.com/riton_dev/'><i class="fa-brands fa-instagram"> </i> Instagram</a> </li>
