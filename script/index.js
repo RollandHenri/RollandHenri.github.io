@@ -31,7 +31,12 @@ nav.innerHTML = `
     <li> <a href='#skills'> Compétences </a> </li>
     <li> <a href="#folio"> Folio </a></li>
     <li class="captcha"> <span> Contact </span> </li>
-    <li class="darkMode"> 
+    <div class="darkMode">
+      <label class="switch" for="checkbox"> .
+        <input type="checkbox" id="checkbox">
+        <span class="slider round"></span>
+      </label> 
+    </div>
   </ul>
 `;
 

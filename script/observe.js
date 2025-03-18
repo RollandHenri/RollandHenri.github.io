@@ -52,9 +52,6 @@ openMenu.addEventListener("click", () => {
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 300) {
-    menuMobile.innerHTML = `
-    <img src='/assets/icon/menu-white.webp' alt="logo menu">
-    `;
   } else {
     menuMobile.innerHTML = `
     <img src='/assets/icon/menu.webp' alt="logo menu">
