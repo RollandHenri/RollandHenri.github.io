@@ -406,7 +406,8 @@ header .aboutImg {
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  background: url("/assets/img/profilCard.webp") center/cover;
+  background: url("/assets/img/testWhite.webp") center/cover;
+  background-position: left;
   opacity: 0;
   transform: translateX(200px);
   animation: onLoadTranslate 0.8s ease forwards 1.3s;
