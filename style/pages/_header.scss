@@ -143,6 +143,8 @@ header {
     animation: onLoadTranslate 0.8s ease forwards 1.3s;
     transition: 1.2s ease-in-out;
     @include mobile {
+      width: 300px;
+      height: 300px;
       margin-bottom: 60px;
       transform: translateX(0);
       animation: fadeIn 1s ease forwards 1.3s;
@@ -164,8 +166,7 @@ header {
       height: 50px;
       font-size: 2.3rem;
       opacity: 0;
-      animation: fadeIn 0.6s ease-in-out forwards 2.5s,
-        scrollAnim 1.5s ease-in-out infinite;
+      animation: fadeIn 0.6s ease-in-out forwards 2.5s, scrollAnim 1.5s ease-in-out infinite;
       @include tablet {
         display: none;
       }
@@ -174,8 +175,7 @@ header {
       }
     }
     & .scrollIconBlack {
-      animation: fadeIn 0.7s ease-in-out forwards 0.5s,
-        scrollAnim 1.5s ease-in-out infinite;
+      animation: fadeIn 0.7s ease-in-out forwards 0.5s, scrollAnim 1.5s ease-in-out infinite;
       @include tablet {
         display: none;
       }

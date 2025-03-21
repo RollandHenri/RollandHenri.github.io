@@ -2,12 +2,7 @@
   width: 100%;
   background: black;
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    357deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(87, 22, 55, 1) 27%,
-    rgba(0, 0, 0, 1) 75%
-  );
+  background: linear-gradient(357deg, rgba(255, 255, 255, 1) 0%, #571637 27%, rgba(0, 0, 0, 1) 75%);
   @include mobile {
     height: 330px;
   }

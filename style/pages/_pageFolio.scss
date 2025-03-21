@@ -42,7 +42,7 @@ body {
     opacity: 0;
     animation: fadeIn 1s ease forwards 1s;
 
-    & h2 {
+    & .folioBookTitle {
       position: relative;
       margin: 200px 0 100px 150px;
       font-size: 1.5rem;
@@ -213,5 +213,28 @@ body {
   }
   & i {
     font-size: 2rem;
+  }
+}
+
+.bookTitle {
+  position: relative;
+  margin: 200px 0 100px 150px;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-family: "Poiret One", sans-serif;
+  color: $color3;
+  @include tablet {
+    text-align: center;
+    margin: 100px auto;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0px;
+    height: 2px;
+    background: $color3;
+    animation: afterNav 1s ease forwards 1.5s;
   }
 }

@@ -41,9 +41,9 @@ nav.innerHTML = `
 `;
 
 skills.innerHTML = `
-<h2> Compétences </h2>
+<h2 class="titleSkills"> Compétences </h2>
 <div class='skillsContain'>
-<div class="skillsLeft"> 
+<div class="skillsLeft skills"> 
     <h3> Développement Front-End </h3>
         <div class="iconLeft"> 
         
@@ -68,7 +68,7 @@ skills.innerHTML = `
         </div>
 </div> 
 
-<div class="skillsMid">
+<div class="skillsMid skills">
       <h3> Développement Wordpress</h3>
         <div class="iconLeft"> 
           <div class='iconFlex'>
@@ -85,7 +85,7 @@ skills.innerHTML = `
         
 </div>
 
-<div class="skillsRight">
+<div class="skillsRight skills">
     <h3> Soft Skills </h3>
       <div class="iconRight"> 
        <div class='iconFlex'> 
@@ -112,7 +112,7 @@ skills.innerHTML = `
 
 folio.innerHTML = `
 <div class='folioContain'> 
-  <h2> Folio </h2>  
+  <h2 class='titleFolio'> Folio </h2>  
     <div class="folioList"> 
       <div class="listCardContainer">
         <div class="listCard card1"> </div>
@@ -156,12 +156,12 @@ folio.innerHTML = `
 footer.innerHTML = `
 <div class='footerList'> 
   <ul>
-    <li><h3>Réseaux</h3></li>
-    <li><a href='https://github.com/RollandHenri'> <i class="fa-brands fa-github"></i> GitHub </a></li>
-    <li><a href='https://x.com/Rolland_Dev'><i class="fa-brands fa-twitter"></i> Twitter </a> </li>
-    <li><a href='https://www.instagram.com/riton_dev/'><i class="fa-brands fa-instagram"> </i> Instagram</a> </li>
+    <li><h3 class='footerWhite'>Réseaux</h3></li>
+    <li><a class='footerLink' href='https://github.com/RollandHenri'> <i class="fa-brands fa-github"></i> GitHub </a></li>
+    <li><a class='footerLink' href='https://x.com/Rolland_Dev'><i class="fa-brands fa-twitter"></i> Twitter </a> </li>
+    <li><a class='footerLink' href='https://www.instagram.com/riton_dev/'><i class="fa-brands fa-instagram"> </i> Instagram</a> </li>
   </ul>
-  <h3> Site créé From Scratch par Rolland-Dev / 2024 </h3>
+  <h3 class='footerWhite'> Site créé From Scratch par Rolland-Dev / 2024 </h3>
   
 </div>
 
