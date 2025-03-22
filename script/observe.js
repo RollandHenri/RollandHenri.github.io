@@ -20,6 +20,9 @@ const menu = document.querySelector(".nav");
 const menuClose = document.querySelector(".closeMobile");
 const link = document.querySelectorAll("nav a");
 const menuMobile = document.querySelector(".menuMobile");
+const checkMenuWhite = document.getElementById("checkbox");
+
+console.log(checkMenuWhite);
 
 /*---------- Captcha ------------*/
 
@@ -50,8 +53,36 @@ openMenu.addEventListener("click", () => {
   openMenu.style.transform = "translateX(-150px)";
 });
 
+checkMenuWhite.addEventListener("change", () => {
+  if (checkMenuWhite.checked) {
+    menuMobile.innerHTML = `<img src='/assets/icon/menu-white.webp' alt="logo menu">`;
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        menuMobile.innerHTML = `
+      <img src='/assets/icon/menu.webp' alt="logo menu" />
+      `;
+      } else {
+        menuMobile.innerHTML = `<img src='/assets/icon/menu-white.webp' alt="logo menu">`;
+      }
+    });
+  } else {
+    menuMobile.innerHTML = `<img src='/assets/icon/menu.webp' alt="logo menu">`;
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        menuMobile.innerHTML = `
+        <img src='/assets/icon/menu-white.webp' alt="logo menu">
+        `;
+      } else {
+        menuMobile.innerHTML = `
+        <img src='/assets/icon/menu.webp' alt="logo menu">
+        `;
+      }
+    });
+  }
+});
+
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 300) {
+  if (window.scrollY > 300 && checkMenuWhite != checkMenuWhite.checked) {
     menuMobile.innerHTML = `
     <img src='/assets/icon/menu-white.webp' alt="logo menu">
     `;

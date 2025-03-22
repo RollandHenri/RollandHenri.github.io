@@ -59,7 +59,7 @@ openMenu.addEventListener("click", () => {
 });
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 300) {
+  if (window.scrollY > 300 && checked != checked.checked) {
     menuMobile.innerHTML = `
     <img src='/assets/icon/menu-white.webp' alt="logo menu">
     `;
@@ -128,6 +128,7 @@ btns.forEach((btn) => {
 
 const checked = document.querySelector('input[type="checkbox"]');
 const folioBody = document.querySelector("body");
+const folioMenuWhite = document.querySelector(".menuMobile");
 const folioNavLink = document.querySelectorAll("nav a");
 const folioNavLinkCaptcha = document.querySelector(".captcha span");
 const folioBookBkgd = document.querySelector(".folioBook");
@@ -137,11 +138,23 @@ const folioFooterBkgd = document.getElementById("footer");
 const folioFooterTitle = document.querySelector("#footer h3");
 const folioFooterLink = document.querySelectorAll(".folioLinkReseau");
 
-console.log(folioNavLink);
+console.log(folioMenuWhite);
 
 checked.addEventListener("click", () => {
   if (checked.checked) {
     folioBody.style.background = "rgb(204, 204, 204)";
+    folioMenuWhite.innerHTML = `
+    <img src='/assets/icon/menu-white.webp' alt="logo menu">
+    `;
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        folioMenuWhite.innerHTML = `
+      <img src='/assets/icon/menu.webp' alt="logo menu" />
+      `;
+      } else {
+        folioMenuWhite.innerHTML = `<img src='/assets/icon/menu-white.webp' alt="logo menu">`;
+      }
+    });
     folioBookBkgd.style.background =
       "linear-gradient(348deg, rgb(204, 204, 204) 50%, rgb(122, 42, 82) 70%, rgb(88, 0, 66) 80%)";
     if (window.matchMedia("(min-width: 650px)").matches) {
@@ -165,8 +178,23 @@ checked.addEventListener("click", () => {
       folioFooterLink[i].style.color = "black";
       folioFooterLink[i].style.transition = "0.8s ease-in-out";
     }
+
+    /*----*/
+    /*----*/
   } else {
     folioBody.style.background = "black";
+    folioMenuWhite.innerHTML = `
+    <img src='/assets/icon/menu.webp' alt="logo menu">
+    `;
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        folioMenuWhite.innerHTML = `<img src='/assets/icon/menu-white.webp' alt="logo menu">`;
+      } else {
+        folioMenuWhite.innerHTML = `
+        <img src='/assets/icon/menu.webp' alt="logo menu" />
+        `;
+      }
+    });
     folioBookBkgd.style.background =
       "linear-gradient(171deg,rgba(255, 255, 255, 1) 0%, rgba(87, 22, 55, 1) 37%, rgba(0, 0, 0, 1) 70%)";
 
