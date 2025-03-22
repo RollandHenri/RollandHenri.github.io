@@ -25,7 +25,7 @@ checked.addEventListener("change", () => {
     console.log("good");
     body.style.background = "rgb(204, 204, 204)";
     body.style.transition = "0.8s ease-in-out";
-    if (window.matchMedia("(min-width: 650px").matches) {
+    if (window.matchMedia("(min-width: 650px)").matches) {
       for (let i = 0; i < linkWhite.length; i++) {
         linkWhite[i].style.color = "#d4b3a5";
         linkWhite[i].style.transition = "0.8s ease-in-out";
