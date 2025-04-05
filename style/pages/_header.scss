@@ -125,6 +125,7 @@ header {
     width: 100%;
     & img {
       transition: all 0.4s ease;
+      border-radius: 50%;
     }
     & img:hover {
       scale: 1.1;
@@ -166,7 +167,8 @@ header {
       height: 50px;
       font-size: 2.3rem;
       opacity: 0;
-      animation: fadeIn 0.6s ease-in-out forwards 2.5s, scrollAnim 1.5s ease-in-out infinite;
+      animation: fadeIn 0.6s ease-in-out forwards 2.5s,
+        scrollAnim 1.5s ease-in-out infinite;
       @include tablet {
         display: none;
       }
@@ -175,7 +177,8 @@ header {
       }
     }
     & .scrollIconBlack {
-      animation: fadeIn 0.7s ease-in-out forwards 0.5s, scrollAnim 1.5s ease-in-out infinite;
+      animation: fadeIn 0.7s ease-in-out forwards 0.5s,
+        scrollAnim 1.5s ease-in-out infinite;
       @include tablet {
         display: none;
       }

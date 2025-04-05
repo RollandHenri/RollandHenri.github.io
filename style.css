@@ -450,6 +450,7 @@ header .logoLink {
 }
 header .logoLink img {
   transition: all 0.4s ease;
+  border-radius: 50%;
 }
 header .logoLink img:hover {
   scale: 1.1;
